@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-no-yy">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Primary Meta Tags -->
+  <title>Blockchain API to interact with ETH, Tron, BSC</title>
+  <meta name="title" content="Blockchain API to interact with ETH, Tron, BSC" />
+  <meta name="description" content="BUILD THE BRIDGE BETWEEN BLOCKCHAIN AND THE REAL WORLD" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chain-gateway.web.app/" />
+  <meta property="og:title" content="ChainGateway" />
+  <meta property="og:description" content="BUILD THE BRIDGE BETWEEN BLOCKCHAIN AND THE REAL WORLD" />
+  <meta property="og:image" content="https://chain-gateway.web.app/assets/images/svg/key-features-card1.svg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://chain-gateway.web.app/" />
+  <meta property="twitter:title" content="ChainGateway" />
+  <meta property="twitter:description" content="BUILD THE BRIDGE BETWEEN BLOCKCHAIN AND THE REAL WORLD" />
+  <meta property="twitter:image" content="https://chain-gateway.web.app/assets/images/svg/key-features-card1.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- Bootstrap CSS ------>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- ================= CSS LINK HERE =============================== -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/navbar.css" />
+  <link rel="stylesheet" href="./assets/css/tron.css" />
+  <!-- ================= FAVICON LINK =============================== -->
+  <link rel="shortcut icon" href="/assets/images/png/favicon.png" type="image/x-icon" />
+  <!-- =============================== SLIDER LINK  ========================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -----------------SLICK-THEME-MIN-CSS-LINK-------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- =============================== SLIDER LINK HERE END ========================================= -->
+  <!-- ---------AOS-ANIMATION-LINK----------- -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body class="vh-100 p-0" id="main">
+  <!-- ================= PRELOADER START =================-->
+  <div id="loading">
+    <div class="d-flex justify-content-center align-items-center vh-100 overflow-hidden">
+      <img class="proloader_img" src="./assets/images/svg/nav-logo.svg" alt="logo" />
+    </div>
+  </div>
+  <!-- ===============DEFINE HEADER SECTION START=============== -->
+  <header class="header_bg position-relative">
+    <div class="position-absolute start-0 top-0 hero_left_shade index_1">
+      <img class="w-100" src="./assets/images/tron/png/market-performanse.png" alt="left-side-shade" />
+    </div>
+    <!-- ------------------------------- NAVBAR START ------------------------------ -->
+    <main class="main-top-section position-relative z_100">
+      <section class="shadow-white w-100 navabar-fixed">
+        <nav class="navbar-wrapper d-flex bg-nav py-2 py-lg-3">
+          <div id="overlay">
+            <div class="container navbar-container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="left d-flex justify-content-center text-center flex-column align-items-center">
+                    <ul class="list-unstyled pt-5">
+                      <li class="pt-4 overflow-hidden d-xl-none">
+                        <span class="d-inline-block section-6">
+                          <div class="overlay_icons d-xl-none">
+                            <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
+                              <div class="tron_navbar">
+                                <div class=" accordion accordion-flush w-100" id="accordionFlushExample">
+                                  <div class="accordion-item ">
+                                    <h2 class="accordion-header " id="flush-headingOne">
+                                      <button class="accordion-button collapsed font_lg color_white f_opens fw_md"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Blockchain APIs
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                      aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body text-start p-0 ">
+                                        <a href="./tron-api"
+                                          class="color_white f_opens fw_md text-center accordion_text d-block ">Tron
+                                          API</a>
+                                        <a href="./bsc-api"
+                                          class="color_white f_opens fw_md text-center accordion_text d-block ">BSC
+                                          API</a>
+                                        <a href="./ethereum-api" class="color_white f_opens fw_md text-center accordion_text d-block
+                                          my-2">Ethereum
+                                          API</a>
+
+                                        <a href="./polygon-api" class="color_white f_opens fw_md text-center mt-2 mb-0 accordion_text
+                                          d-block">Polygon
+                                          API</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <li class="my-4 my-sm-5">
+                                <a aria-label="link" class="color_white ff_open fw_md header_link overlay_links"
+                                  href="./blog" rel="noopener">
+                                  Blog</a>
+                              </li>
+                              <li>
+                                <a aria-label="link" class="color_white ff_open fw_md header_link overlay_links"
+                                  href="./tutorials" rel="noopener">
+                                  Tutorials</a>
+                              </li>
+                              <div class="tron_navbar nav_accordion_2">
+                                <div class=" accordion accordion-flush w-100" id="accordionFlushExample">
+                                  <div class="accordion-item ">
+                                    <h2 class="accordion-header " id="flush-headingTwo">
+                                      <button class="accordion-button collapsed font_lg color_white f_opens fw_md"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Docs
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                      aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body text-start p-0 ">
+                                        <a href="https://docs.chaingateway.io/#tag/Tron"
+                                          class="color_white f_opens fw_md accordion_text  text-center d-block">Tron
+                                          API</a>
+                                        <a href="https://docs.chaingateway.io/#tag/Ethereum"
+                                          class="color_white f_opens fw_md accordion_text  text-center d-block">Ethereum
+                                          API</a>
+                                        <a href="https://docs.chaingateway.io/#tag/BinanceSmartChain"
+                                          class="color_white f_opens fw_md accordion_text text-center  d-block my-3">BSC
+                                          API</a>
+                                        <a href="https://docs.chaingateway.io/#tag/Polygon" class="color_white f_opens fw_md mt-2 mb-0 text-center  accordion_text
+                                          d-block">Polygon
+                                          API</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <li class="mt-4 mt-sm-5">
+                                <a aria-label="link" class="color_white ff_open fw_md header_link overlay_links"
+                                  href="./pricing" rel="noopener">
+                                  Pricing</a>
+                              </li>
+                              <li class="mt-4 mt-sm-5">
+                                <a aria-label="link" class="color_white ff_open fw_md header_link overlay_links"
+                                  href="./support" rel="noopener">
+                                  Support</a>
+                              </li>
+                              <li class="pt-4 pt-sm-5 overflow-hidden d-md-none">
+                                <span class="d-flex flex-column-reverse flex-md-row d-inline-block section-7">
+                                  <a rel="nofollow" href="https://app.chaingateway.io/register">
+                                    <button class="start_btn ff_dosis" type="button">
+                                      Get Started
+                                    </button>
+                                  </a>
+                                  <a rel="nofollow" href="https://app.chaingateway.io/login">
+                                    <button class="login_btn ff_dosis white border-0 mb-4 mb-sm-5 mb-md-0" type="button">
+                                      Login
+                                    </button>
+                                  </a>
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container container-xl-fluid navbar-container custom_container">
+            <div class="navbar-bg rounded-pill pt-1 px-1">
+              <div class="d-flex justify-content-between align-items-center text-nowrap">
+                <a aria-label="link" href="/">
+                  <img class="nav_logo" src="/assets/images/svg/nav-logo.svg" alt="nav-logo" />
+                </a>
+                <div class="header_icons d-none d-xl-block w-100">
+                  <ul class="list-unstyled d-flex align-items-center mb-0 ps-5 justify-content-center">
+                    <div class="dropdown right-menu n-item">
+                      <button class="btn btn-secondary dropdown-toggle dropdown-toggle-blue d-flex align-items-center">
+                        <a href="#Blockchain"
+                          class="color_white ff_open font-lg fw-normal dropdown_text active">Blockchain APIs</a>
+                      </button>
+                      <ul class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text"
+                            href="./tron-api">Tron
+                            API</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text"
+                            href="./bsc-api">BSC
+                            API</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text" href="./ethereum-api">
+                            Ethereum API
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text"
+                            href="./polygon-api">Polygon
+                            API
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <li class="mx-4">
+                      <a aria-label="link" class="color_white ff_open font-lg fw-normal header_link " href="./blog"
+                        rel="noopener">
+                        Blog</a>
+                    </li>
+                    <li>
+                      <a aria-label="link" class="color_white ff_open font-lg fw-normal header_link" href="./tutorials"
+                        rel="noopener">
+                        Tutorials</a>
+                    </li>
+                    <div class="dropdown right-menu n-item mx-4">
+                      <button class="btn btn-secondary dropdown-toggle dropdown-toggle-blue d-flex align-items-center">
+                        <a href="#docs" class="color_white ff_open font-lg fw-normal dropdown_text ">Docs</a>
+                      </button>
+                      <ul class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text" href="https://docs.chaingateway.io/#tag/Tron">
+                            Tron API
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text" href="https://docs.chaingateway.io/#tag/Ethereum">
+                            Ethereum API
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text"
+                            href="https://docs.chaingateway.io/#tag/BinanceSmartChain">BSC
+                            API</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item color_white ff_open font-lg fw-normal dropdown_text"
+                            href="https://docs.chaingateway.io/#tag/Polygon">Polygon
+                            API
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <li>
+                      <a aria-label="link" class="color_white ff_open font-lg fw-normal header_link" href="./pricing"
+                        >
+                        Pricing</a>
+                    </li>
+                    <li class="ms-4">
+                      <a aria-label="link" class="color_white ff_open font-lg fw-normal header_link" href="./support"
+                        >
+                        Support</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-none d-md-block">
+                  <a rel="nofollow" href="https://app.chaingateway.io/register">
+                    <button class="start_btn ff_open" type="button">
+                      Get Started
+                    </button>
+                  </a>
+                  <a rel="nofollow" href="https://app.chaingateway.io/login">
+                    <button class="login_btn ff_open white border-0 ms-sm-2">
+                      Login
+                    </button>
+                  </a>
+                </div>
+
+                <div class="nav-quantum d-flex justify-content-between align-items-center">
+                  <!-- Toggle Button nav -->
+                  <div id="main-menu" class="hamburger-menu d-inline-block d-xl-none">
+                    <span class="first"></span>
+                    <span class="sec"></span>
+                    <span class="third"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </main>
+
+    <!-- ------------------------  HERO SECTION START ------------------------ -->
+    <section class="pt-3 pt-lg-4 pt-xl-0">
+      <!-- <div class="container container_modified custom_container position-relative d-lg-flex align-items-center
+        tron_hero_section w-100 px_xsm_12">
+        <div
+          class="row flex-column-reverse flex-lg-row justify-content-center justify-content-between align-items-center w-100 mx-0">
+        </div>
+      </div> -->
+      </div>
+    </section>
+  </header>
+  <!-- ================================ DEFINE SupportSTART ================================-->
+  <section class="py-5 documentation_bg position-relative">
+    <div class="position-absolute end-0 documentation_shade z-index-0">
+      <img src="./assets/images/tron/png/advantages-shade.png" alt="left-side-shade" />
+    </div>
+    <div class="container container_modified py-lg-5">
+      <div
+        class="row flex-column flex-lg-row justify-content-center align-items-center py-sm-5 position-relative z-index-50">
+        <div class="col-sm-10 col-lg-6" data-aos="fade-right">
+          <div class="d-flex justify-content-start justify-content-lg-center align-items-center">
+            <div class="col-sm-auto col-lg-6 mb-4 pb-3 pb-lg-0 mb-lg-0">
+              <a href="https://t.me/ChaingatewaySupportBot" target="_blank"
+                rel="noopener noreferrer">
+                <div
+                  class="ms-lg-auto documentation_card d-flex align-items-center justify-content-center flex-column mb-sm-3">
+                  <img class="mb-1 mx-auto" src="./assets/images/svg/chatbot.svg" alt="wallet-api" />
+                  <h4 class="font_xl color_offwhite ff_dosis fw-bold pt-3">
+                    Telegram Chatbot
+                  </h4>
+                </div>
+              </a>
+              <a href="https://t.me/chaingateway" target="_blank"
+                rel="noopener noreferrer">
+                <div
+                  class="ms-lg-auto documentation_card d-flex align-items-center justify-content-center flex-column mt-3 mt-sm-4">
+                  <img class="mb-1 mx-auto" src="./assets/images/svg/telegram.svg" alt="webhook-api" />
+                  <h4 class="font_xl color_offwhite ff_dosis fw-bold pt-3">
+                    Telegram Group
+                  </h4>
+                </div>
+              </a>
+            </div>
+            <a href="mailto:support@chaingateway.io" target="_blank"
+              rel="noopener noreferrer">
+              <div class="col-auto col-lg-6">
+                <div
+                  class="documentation_card d-flex align-items-center justify-content-center flex-column mb-3 ms-3 ms-sm-4">
+                  <img class="mb-1 mx-auto" src="./assets/images/svg/email.svg" alt="transaction-api" />
+                  <h4 class="font_xl color_offwhite ff_dosis fw-bold pt-3">
+                    E-Mail
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-10 col-lg-6 col-xl-5" data-aos="fade-left">
+          <div>
+            <h1 class="sub_heading mb-md-4">Support</h1>
+            <p class="sub_para pt-2 pe-xxl-5">
+              Welcome to our Blockchain API support page. Our API simplifies blockchain development, providing transaction management, webhooks on deposits, and blockchain data. We support popular networks such as Ethereum, Binance Smart Chain and Tron.
+              <br><br>
+              Our team is available 24/7 to assist you via email, Telegram chatbot, and Telegram group. We'll respond to your inquiries within 24 hours, unless you booked a SLA.
+              <br><br>
+              We also provide comprehensive documentation and tutorials to help you get started with our API. Thank you for choosing our blockchain API. We look forward to helping you build your next blockchain application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========================= FOOTER SECTION START =========================-->
+  <footer class="tron_footer_bg overflow-hidden ">
+    <div class="container container_modified custom_container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="text-center">
+            <div class="pt-4 pt-3 border-bottom pb-4">
+              <img class="pb-2" src="./assets/images/svg/footor-logo.svg" alt="footor-logo" />
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between justify-content-sm-center gap-1 gap-sm-4 flex-nowrap mt-3 pt-1 ps-0">
+
+              <a class="font_md fw-normal color_offwhite footer_link ff_open" aria-label="link"
+                href="#Terms_service">Terms of
+                Service</a>
+              <a class="font_md fw-normal color_offwhite footer_link ff_open" aria-label="link"
+                href="#privacypolicy">Privacy Policy</a>
+              <a class="font_md fw-normal color_offwhite footer_link ff_open" aria-label="link"
+                href="#imprint">Imprint</a>
+              <a class="font_md fw-normal color_offwhite footer_link ff_open" aria-label="link" href="#blog">Blog</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center flex-column flex-sm-row mb-4 mt-4 mt-sm-5 pt-md-3">
+          <p class="font_md fw-normal color_offwhite ff_open opacity_07 mb-md-3 mb-0 ">
+            Copyright ©
+            <span id="year-change"></span>
+            <a aria-label="link" class=" font_md fw-normal color_offwhite ff_open"
+              href="mailto:Chaingateway.io">Chaingateway.io</a>
+          </p>
+          <h5 class="font_md fw-normal color_offwhite ff_open opacity_07 mb-md-3 mb-0 py-2 py-sm-0">
+            Support
+          </h5>
+          <p class="font_md fw-normal color_offwhite ff_open opacity_07 mb-md-3 mb-0">
+            Change cookie preferences
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--========================= FOOTER SECTION START =========================-->
+  <!-- ------------------ BACT-TO-TOP ------------------------- -->
+  <a aria-label="link" href="#" id="scroll" style="display: none"><span></span></a>
+  <!-- ------------------ BACT-TO-TOP-END ------------------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- ==========================DEFINE LOTTIE PLAYER link========================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- =================================== SLIDER LINK HERE ============================================ -->
+  <!------------------------------JQUERY-MIN-JS-LINK--------------------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ==============================SLICK-MIN-JS-LINK ============================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Trustpilot script to include in the website head section -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+  <!-- ============================== SLIDER LINK HERE END ============================== -->
+  <script src="/assets/js/tabs.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script>
+    $('.slider_responsive').slick({
+      arrows: false,
+      dots: true,
+      infinite: true,
+      speed: 300,
+      centerpadding: 24,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  </script>
+</body>
+
+</html>

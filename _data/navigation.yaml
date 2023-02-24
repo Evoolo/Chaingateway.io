@@ -1,0 +1,33 @@
+main:
+  - title: Blockchain APIs
+    subfolderitems:
+      - page: "Tron Api"
+        url: /tron-api
+      - page: BSC Api
+        url: /thing2.html
+      - page: Ethereum Api
+        url: /thing3.html
+      - page: Polygon Api
+        url: /thing3.html
+      - page: Bitcoin Api
+        url: /thing3.html
+  - page: Blog
+    url: /thing3.html
+  - page: Tutorials
+    url: /thing3.html
+  - title: Docs
+    subfolderitems:
+      - page: Tron Api
+        url: https://docs.chaingateway.io/#tag/Tron
+      - page: BSC Api
+        url: https://docs.chaingateway.io/#tag/BinanceSmartChain
+      - page: Ethereum Api
+        url: https://docs.chaingateway.io/#tag/Ethereum
+      - page: Polygon Api
+        url: https://docs.chaingateway.io/#tag/Polygon
+      - page: Bitcoin Api
+        url: https://docs.chaingateway.io/#tag/Bitcoin
+  - page: Pricing
+    url: /thing3.html
+  - page: Support
+    url: /support

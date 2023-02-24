@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-no-yy">
+
+<head>
+    {% include meta.html %}
+    {% include scripts_start.html %}
+    {% include styles.html %}
+
+  
+
+</head>
+
+<body class="vh-100 p-0" id="main">
+  <!-- ============================== PRELOADER START ============================== -->
+  <div id="loading">
+    <div class="d-flex justify-content-center align-items-center vh-100 overflow-hidden">
+      <img class="proloader_img" src="./assets/images/svg/nav-logo.svg" alt="logo" />
+    </div>
+  </div>
+  <!-- ======================= DEFINE HEADER SECTION START ======================= -->
+  {% include header.html hero=page.hero %}
+
+  {{ content }}
+
+  {% include footer.html %}
+  <!-- ============================== BACT-TO-TOP ============================== -->
+  <a href="#" id="scroll" style="display: none"><span></span></a>
+  <!-- ============================== BACT-TO-TOP-END ============================== -->
+  {% include scripts_end.html %}
+</body>
+
+</html>

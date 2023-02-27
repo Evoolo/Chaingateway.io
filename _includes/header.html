@@ -27,42 +27,44 @@ class="position-relative"
                         <span class="d-inline-block section-6">
                           <div class="overlay_icons d-xl-none">
                             <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
+                              <div class="tron_navbar">
                               {% for item in site.data.navigation.main %}
                                 {% if item.subfolderitems[0] %}
-                                <div class="tron_navbar">
                                   <div class=" accordion accordion-flush w-100" id="accordionFlushExample">
                                     <div class="accordion-item ">
-                                      <h2 class="accordion-header " id="flush-headingOne">
+                                      <h2 class="accordion-header " id="flush-heading{{- item.title | slugify -}}">
                                         <button class="accordion-button collapsed font_lg color_white f_opens fw_md"
-                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                          aria-expanded="false" aria-controls="flush-collapseOne">
-                                          Blockchain APIs
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{- item.title | slugify -}}"
+                                          aria-expanded="false" aria-controls="flush-collapse{{- item.title | slugify -}}">
+                                          {{ item.title }}
                                         </button>
                                       </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                      <div id="flush-collapse{{- item.title | slugify -}}" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading{{- item.title | slugify -}}" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body text-start p-0 ">
                                           {% for entry in item.subfolderitems %}
-                                            <a href="{{ entry.url }}"
+                                            <a href="{{ entry.url | relative_url }}"
                                               class="color_white f_opens fw_md text-center accordion_text d-block ">{{ entry.page }}</a>
                                           {% endfor %}
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
+                                
                                 {% else %}
+                              
                                 <li class="my-4 my-sm-5">
                                   <a aria-label="link" 
                                     {% if item.url contains "http" %}
                                       target="_blank"
                                     {% endif %}
                                   class="color_white ff_open fw_md header_link overlay_links"
-                                    href="{{ item.url }}" rel="noopener">
-                                    {{ item.title }}</a>
+                                    href="{{ item.url | relative_url }}" rel="noopener">
+                                    {{ item.page }}</a>
                                 </li>
                               {% endif %}
                               {% endfor %}
+                            </div>
 
                               <li class="pt-4 pt-sm-5 overflow-hidden d-md-none">
                                 <span class="d-flex flex-column-reverse flex-md-row d-inline-block section-7">
@@ -91,7 +93,7 @@ class="position-relative"
           <div class="container container-xl-fluid navbar-container custom_container">
             <div class="navbar-bg rounded-pill pt-1 px-1">
               <div class="d-flex justify-content-between align-items-center text-nowrap">
-                <a aria-label="link" href="/">
+                <a aria-label="link" href="{{ '/' | relative_url }}">
                   <img class="nav_logo" src="{{ 'assets/images/svg/nav-logo.svg ' | relative_url }}" alt="nav-logo" />
                 </a>
                 <div class="header_icons d-none d-xl-block w-100">
@@ -110,7 +112,7 @@ class="position-relative"
                                 {% if entry.url contains "http" %}
                                   target="_blank"
                                 {% endif %}
-                                  href="{{ entry.url }}">{{ entry.page }}
+                                  href="{{ entry.url | relative_url }}">{{ entry.page }}
                                   </a>
                               </li>
                               {% endfor %}
@@ -122,7 +124,7 @@ class="position-relative"
                         {% if item.url contains "http" %}
                           target="_blank"
                         {% endif %}
-                        class="color_white ff_open font-lg fw-normal header_link " href=" {{ item.url }}"
+                        class="color_white ff_open font-lg fw-normal header_link " href=" {{ item.url | relative_url }}"
                           rel="noopener">
                           {{ item.page }}
                         </a>

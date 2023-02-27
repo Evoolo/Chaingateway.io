@@ -826,8 +826,8 @@ button:focus:not(:focus-visible) {
 
 .tron_navbar .accordion-header {
     text-align: -webkit-center !important;
-    min-width: 275px !important;
-    white-space: nowrap !important;
+    /*min-width: 275px !important;
+    white-space: nowrap !important;*/
 }
 
 

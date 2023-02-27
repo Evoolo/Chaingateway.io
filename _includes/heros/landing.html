@@ -29,7 +29,7 @@
             </div>
             <div class="col-sm-10 col-md-10 col-lg-6" data-aos="fade-left" data-aos-delay="1800">
               <div class="pt-4 pt-md-0 our_misson_img mb-4 mb-lg-0 ms-auto index_10 ">
-                <lottie-player class="w-100" src="./assets/hero-animation.json" background="transparent" speed="1"
+                <lottie-player class="w-100" src="{{ 'assets/hero-animation.json' | relative_url }}" background="transparent" speed="1"
                   loop autoplay>
                 </lottie-player>
               </div>
@@ -38,7 +38,7 @@
           <div class="text-center play_icon position-relative z-index-5  " data-aos="zoom-in" data-aos-delay="2500">
             <button type="button" class="bg-transparent border-0 pe-0 mt-4 mt-lg-5 mt-xl-0" data-bs-toggle="modal"
               data-bs-target="#exampleModalCenter">
-              <img class="cursor_pointer" src="./assets/images/svg/play-icon.svg" alt="play-icon">
+              <img class="cursor_pointer" src="{{ 'assets/images/svg/play-icon.svg' | relative_url }}" alt="play-icon">
             </button>
           </div>
           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -49,7 +49,7 @@
                   <button type="button" class="btn-close video-arrow" data-bs-dismiss="modal"
                     aria-label="Close"></button>
                   <video class="w-100 h-100" autoplay muted controls loop>
-                    <source src="./assets/video/Chaingateway-video.mp4" type="video/ogg">
+                    <source src="{{ 'assets/video/Chaingateway-video.mp4' | relative_url }}" type="video/ogg">
                   </video>
                 </div>
               </div>

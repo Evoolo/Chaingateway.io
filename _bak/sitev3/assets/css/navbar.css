@@ -722,6 +722,7 @@ button:focus:not(:focus-visible) {
     border-radius: 8px;
     border: 0;
     top: 30px !important;
+    transition-delay: 3s;
 }
 
 .dropdown_menu .dropdown-item {

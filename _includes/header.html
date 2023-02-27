@@ -2,8 +2,10 @@
 
 {% if page.hero contains 'landing' %}
 class="hero_section_bg_color hero_bg_color"
-{% else %}
+{% elsif page.layout contains 'apis' %}
 class="header_bg position-relative"
+{% else %}
+class="position-relative"
 {% endif %}
 
 

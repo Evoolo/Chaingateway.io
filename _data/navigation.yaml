@@ -4,17 +4,17 @@ main:
       - page: "Tron Api"
         url: /tron-api
       - page: BSC Api
-        url: /thing2.html
+        url: /bsc-api
       - page: Ethereum Api
-        url: /thing3.html
+        url: /ethereum-api
       - page: Polygon Api
-        url: /thing3.html
+        url: /poklygon-api
       - page: Bitcoin Api
-        url: /thing3.html
+        url: /bitcoin-api
   - page: Blog
-    url: /thing3.html
+    url: /blog
   - page: Tutorials
-    url: /thing3.html
+    url: /tutorials
   - title: Docs
     subfolderitems:
       - page: Tron Api
@@ -28,6 +28,6 @@ main:
       - page: Bitcoin Api
         url: https://docs.chaingateway.io/#tag/Bitcoin
   - page: Pricing
-    url: /thing3.html
+    url: /pricing
   - page: Support
     url: /support

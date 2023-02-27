@@ -1,8 +1,6 @@
 ---
 layout: default
-title: Tron Api
 hero: /heros/tron.html
-permalink: /tron-api
 ---
 
 {% assign source = site.data.endpoints[page.api] %}
@@ -271,7 +269,7 @@ permalink: /tron-api
             {% endfor %}
             {% for card in source.get_started.cards %}
                 <div class="col-lg-8 text-center text-md-start tab_image{{ forloop.index }}" data-aos="fade-left"
-                    {% if forloop.first %} style="display:block" {% else %} style="display:hidden"  {% endif %}>
+                    {% if forloop.first %} style="display:block" {% else %} style="display:none"  {% endif %}>
                     <img class="img-fluid" src=" {{ card.image }}" alt="{{ card.heading | slugify }}">
                 </div>
             {% endfor %}

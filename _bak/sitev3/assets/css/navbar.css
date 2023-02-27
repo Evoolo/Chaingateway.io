@@ -715,19 +715,20 @@ button:focus:not(:focus-visible) {
 }
 
 .dropdown_menu {
-    display: none;
-    position: absolute;
+    display: block;
+
     background-color: #000940;
     min-width: 100px;
     border-radius: 8px;
     border: 0;
-    top: 30px !important;
-    transition-delay: 3s;
+    
+    transition: opacity 8s;
 }
 
 .dropdown_menu .dropdown-item {
     color: #fff;
     display: block;
+    transition: opacity 8s;
 }
 
 .dropdown_text {

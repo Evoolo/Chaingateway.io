@@ -660,6 +660,7 @@ a {
 
 .dropdown-menu {
     padding: 10px 20px;
+    transition: 8s;
 }
 
 .dropdown-item {
@@ -721,7 +722,7 @@ button:focus:not(:focus-visible) {
     min-width: 100px;
     border-radius: 8px;
     border: 0;
-    top: 30px !important;
+
 }
 
 .dropdown_menu .dropdown-item {

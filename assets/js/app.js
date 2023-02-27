@@ -91,7 +91,7 @@ $(document).ready(function () {
 
 // DEFINE AOS LINK===========================================
 AOS.init({
-  duration: 1000,
+  duration: 400,
   once: true,
 });
 $(".hero_slider").slick({

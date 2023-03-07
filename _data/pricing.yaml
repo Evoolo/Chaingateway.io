@@ -1,0 +1,33 @@
+featured:
+  - name: FREE
+    popular: false
+    transactions: "50"
+    addresses: "50"
+    webhooks: "20"
+    requests: "1000"
+    price_monthly: "0"
+    price_yearly: "0"
+  - name: PRO
+    popular: false
+    transactions: "20.000"
+    addresses: "30.000"
+    webhooks: "1.500"
+    requests: "20.000"
+    price_monthly: "149"
+    price_yearly: "1490"
+  - name: PREMIUM
+    popular: true
+    transactions: "20.000"
+    addresses: "30.000"
+    Webhooks: "7.500"
+    requests: "200.000"
+    price_monthly: "299"
+    price_yearly: "2990"
+  - name: ENTERPRISE
+    popular: false
+    transactions: "200.000"
+    addresses: "200.000"
+    webhooks: "50.000"
+    requests: "50.000.000"
+    price_monthly: "599"
+    price_yearly: "5990"

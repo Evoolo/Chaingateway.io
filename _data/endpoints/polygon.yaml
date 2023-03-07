@@ -1,0 +1,90 @@
+explanation:
+  heading: What Is Polygon
+  text: Polygon (formerly known as Matic Network) is a Layer 2 scaling solution for Ethereum that aims to improve scalability and user experience for decentralized applications (DApps). Polygon provides faster and cheaper transactions on Ethereum using Plasma side chains and a Proof of Stake (PoS) consensus mechanism.
+  image: /assets/images/polygon/png/what_is_polygon.png
+advantages:
+  heading: Advantages of Polygon
+  cards:
+    - image: /assets/images/polygon/svg/smart-contract.svg
+      heading: Smart Contracts
+      text: |
+        Polygon supports Solidity smart contracts, enabling developers to build decentralized applications on a secure and efficient network.
+    - image: /assets/images/polygon/svg/transaction-speed.svg
+      heading: Fast Transactions
+      text: |
+        Transactions on Polygon are faster and cheaper than on the Ethereum mainnet, with an average block time of about 2 seconds.
+    - image: /assets/images/polygon/svg/scalability.svg
+      heading: High Scalability
+      text: |
+        Polygon can process up to 65,000 transactions per second on a single side chain, and has the potential to scale even further with its proposed Polygon SDK.
+market:
+  heading: Polygon Market Performance
+  image: /assets/images/polygon/svg/performance.svg
+  id: polygon
+slider:
+  - heading: Polygon Ecosystem
+    image: /assets/images/polygon/svg/wallet.svg
+    title: Polygon Wallets
+    text: |
+      Polygon Wallets allow you to send and receive MATIC and ERC20 Tokens on the Polygon Network.
+      Our Polygon API allows you to create and manage Polygon addresses automatically.
+  - heading: Polygon Ecosystem
+    image: /assets/images/polygon/png/quickswap.png
+    title: QuickSwap
+    text: |
+      QuickSwap is a decentralized exchange built on Polygon that offers fast and cheap trading of ERC20 tokens.
+      With our Polygon API you can access QuickSwap and other Polygon DApps, and get information and webhooks on transactions.
+  - heading: Polygon Ecosystem
+    image: /assets/images/polygon/png/polygon-starter.png
+    title: Polygon Starter
+    text: |
+      Polygon Starter is a launchpad for Polygon-based projects, providing funding, development support, and community building.
+      Use our Polygon API to integrate with Polygon Starter and other Polygon-based projects.
+docs:
+  headline: Polygon API Documentation
+  text: We provide comprehensive API documentation, including request and response examples. Take a look at our available Polygon API functions and endpoints.
+  link: https://docs.chaingateway.io/#tag/Polygon
+  link_text: Explore the Documentation
+  cards:
+    - heading: Wallet API
+      image: /assets/images/polygon/svg/wallet-2.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-addresses-Requests
+    - heading: Webhook API
+      image: /assets/images/polygon/svg/notifications.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-WebhooksIPN-Requests
+    - heading: Transaction API
+      image: /assets/images/polygon/svg/transactions.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-Transaction-Requests
+features:
+  heading: Polygon API Features
+  text: Our Polygon API is always up to date and follows the latest security practices. It is universally usable with any ERC20 token. We charge only for successful requests, and there are no token listing fees. Our support is the fastest on the market and helps with all requests.
+  cards:
+    - heading: Secure
+      image: /assets/images/polygon/svg/lock.svg
+    - heading: High Availability
+      image: /assets/images/polygon/svg/clock-2.svg
+    - heading: Universal
+      image: /assets/images/polygon/svg/globe.svg
+get_started:
+  heading: Get started with Chaingateway
+  cards:
+    - heading: Data Analytics
+      image: /assets/images/tron/svg/performance.svg
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 2step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tutorials
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 1step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tron ETF
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 3step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Ecosystem
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 4step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.

@@ -1,0 +1,105 @@
+explanation:
+  heading: What Is Bitcoin
+  text: Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.
+  image: /assets/images/bitcoin/png/what_is_bitcoin.png
+advantages:
+  heading: Advantages of Bitcoin
+  cards:
+    - image: /assets/images/bitcoin/svg/decentralization.svg
+      heading: Decentralization
+      text: |
+        Bitcoin is decentralized, meaning
+        it is not controlled by any government
+        or financial institution. This makes it
+        resistant to censorship and manipulation.
+    - image: /assets/images/bitcoin/svg/transactions.svg
+      heading: Fast Transactions
+      text: |
+        Bitcoin transactions are processed
+        quickly, and can be confirmed in minutes
+        with low transaction fees. However, during
+        times of high network congestion, fees can
+        increase and transaction times can slow down.
+    - image: /assets/images/bitcoin/svg/limited-supply.svg
+      heading: Limited Supply
+      text: |
+        There will only ever be 21 million bitcoins
+        in existence, making it a scarce asset that
+        cannot be easily manipulated by inflation.
+market:
+  heading: Bitcoin Market Performance
+  image: /assets/images/bitcoin/svg/performance.svg
+  id: bitcoin
+slider:
+  - heading: Bitcoin Ecosystem
+    image: /assets/images/bitcoin/svg/wallet.svg
+    title: Bitcoin Wallets
+    text: |
+      Bitcoin wallets allow you to store, send,
+      and receive bitcoins. Our Bitcoin API allows
+      you to create and manage Bitcoin addresses
+      automatically.
+  - heading: Bitcoin Ecosystem
+    image: /assets/images/bitcoin/png/bitpay.png
+    title: BitPay
+    text: |
+      BitPay is a popular payment processor
+      that allows merchants to accept Bitcoin
+      payments. With our Bitcoin API, you can easily
+      integrate BitPay into your website or application.
+  - heading: Bitcoin Ecosystem
+    image: /assets/images/bitcoin/png/bitcoin-atm.png
+    title: Bitcoin ATMs
+    text: |
+      Bitcoin ATMs allow you to buy and sell
+      bitcoins with cash. Our Bitcoin API can help
+      you find Bitcoin ATMs near you and provide
+      information on their fees and limits.
+docs:
+  headline: Bitcoin API Documentation
+  text: We provide comprehensive API documentation, including request and response examples. Take a look at our available Bitcoin API functions and endpoints.
+  link: https://docs.chaingateway.io/#tag/Bitcoin
+  link_text: Explore the Documentation
+  cards:
+    - heading: Wallet API
+      image: /assets/images/bitcoin/svg/wallet-2.svg
+      link: https://docs.chaingateway.io/#tag/Bitcoin-greater-addresses-Requests
+    - heading: Webhook API
+      image: /assets/images/bitcoin/svg/notifications.svg
+      link: https://docs.chaingateway.io/#tag/Bitcoin-greater-WebhooksIPN-Requests
+    - heading: Transaction API
+      image: /assets/images/bitcoin/svg/transactions.svg
+      link: https://docs.chaingateway.io/#tag/Bitcoin-greater-Transaction-Requests
+features:
+  heading: Bitcoin API Features
+  text: Our Bitcoin API is always up to date and follows the latest security practices. We charge only for successful requests. Our support is the fastest on the market and helps with all requests.
+  cards:
+    - heading: Secure
+      image: /assets/images/polygon/svg/lock.svg
+    - heading: High Availability
+      image: /assets/images/polygon/svg/clock-2.svg
+    - heading: Universal
+      image: /assets/images/polygon/svg/globe.svg
+get_started:
+  heading: Get started with Chaingateway
+  cards:
+    - heading: Data Analytics
+      image: /assets/images/tron/svg/performance.svg
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 2step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tutorials
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 1step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tron ETF
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 3step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Ecosystem
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 4step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.

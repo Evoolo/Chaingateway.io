@@ -462,6 +462,7 @@ body {
   background: linear-gradient(102.08deg,
       #a81fe9 -9.95%,
       #12a09e 123.17%) !important;
+    color:white;
 }
 
 .start_btn2 {
@@ -1127,3 +1128,290 @@ body {
 }
 
 /* ============================== MEDIA QUERY END =================================== */
+
+.card-pricing.popular {
+
+  border-width: 3px;
+  border-radius: 20px;
+  background-image:  1 !important;
+  background: -o-linear-gradient(left, #062049, #06234a) padding-box,
+    -o-linear-gradient(top, #12a09e, #a81fe9) content-box;
+  background: linear-gradient(to right, #062049, #06234a) padding-box,
+    linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%) content-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+
+.card-pricing {
+  border-width: 3px;
+  border-radius: 20px;
+  z-index: 100 !important;
+  background-image:  1 !important;
+  border: 1.2px solid transparent;
+  background: -o-linear-gradient(left, #062049, #06234a) padding-box,
+    -o-linear-gradient(top, #84d2fe, #5782c9, #2f4393, #122156) content-box;
+  background: linear-gradient(to right, #062049, #06234a) padding-box,
+    linear-gradient(to bottom, #84d2fe, #5782c9, #2f4393, #122156) content-box;
+  border-radius: 20px;
+  padding: 0px 36px 0px 36px;
+  cursor: pointer;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card-pricing .list-unstyled li {
+  z-index: 200;
+  padding: .5rem 0;
+  color: #FFF;
+ 
+}
+
+.card-pricing:hover {
+  -webkit-box-shadow: 0 0 12px var(--color-offwhite) !important;
+  box-shadow: 0 0 12px var(--color-offwhite) !important;
+}
+
+.pricing-header{
+  background: linear-gradient(to right, #062049, #06234a) padding-box, linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%);
+
+}
+
+.switch-wrapper {
+
+  position: relative;
+
+  display: inline-flex;
+
+  padding: 4px;
+
+  
+
+  margin-bottom: 40px;
+
+  border-radius: 30px;
+
+  background: linear-gradient(to right, #062049, #06234a) padding-box, linear-gradient(to bottom, #84d2fe, #5782c9, #2f4393, #122156) content-box;
+
+}
+
+.switch-wrapper [type="radio"] {
+
+  position: absolute;
+
+  left: -9999px;
+
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+
+  color: #fff;
+  
+
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+
+  background: transparent;
+
+}
+
+.switch-wrapper
+
+  [type="radio"]:checked#monthly
+
+  + label[for="yearly"]
+
+  ~ .highlighter {
+
+  transform: none;
+
+}
+
+.switch-wrapper
+
+  [type="radio"]:checked#yearly
+
+  + label[for="monthly"]
+
+  ~ .highlighter {
+
+  transform: translateX(100%);
+
+}
+
+.switch-wrapper label {
+
+  font-size: 16px;
+
+  z-index: 1;
+  text-align: center;
+
+  min-width: 100px;
+
+  line-height: 32px;
+
+  cursor: pointer;
+  color: white;
+
+  border-radius: 30px;
+
+  transition: color 0.25s ease-in-out;
+
+}
+
+.switch-wrapper label:hover {
+
+  background: rgba(255, 251, 255, 0.2);
+
+
+}
+
+.hide{
+  display: none;
+}
+
+.switch-wrapper .highlighter {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+  background: linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-toggle:hover {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: white;
+  opacity: 0.8;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  color:white;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+
+.highlight pre { background-color: #272822; }
+.highlight .hll { background-color: #272822; }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+.highlight .gh { } /* Generic Heading & Diff Header */
+.highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
+.highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
+.highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+
+.lineno {
+
+
+
+          /* Hacky, but necessary. Without these lines, single-digit line 
+          /* numbers will not line up with double-digit ones. Change width
+          /* to suit your font. */
+          width: 25px;
+          text-align:right;
+
+          /* Add a nice border */
+
+          padding-left: 0.5em;
+          padding-right: 1em;
+          border-right: 1px solid gray;
+
+}

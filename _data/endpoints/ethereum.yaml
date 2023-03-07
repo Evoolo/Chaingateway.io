@@ -1,0 +1,106 @@
+explanation:
+  heading: What Is Ethereum
+  text: Ethereum is a decentralized blockchain platform that enables developers to create smart contracts and decentralized applications (DApps). It has its own cryptocurrency called Ether (ETH), which is used to pay for transactions and computational services on the network.
+  image: /assets/images/ethereum/png/what_is_ethereum.png
+advantages:
+  heading: Advantages of Ethereum
+  cards:
+    - image: /assets/images/ethereum/svg/smart-contract.svg
+      heading: Smart Contracts
+      text: |
+        Ethereum pioneered the concept
+        of Smart Contracts, which are
+        self-executing agreements with
+        the terms of the agreement
+        between buyer and seller
+        being directly written into code.
+    - image: /assets/images/ethereum/svg/transaction-speed.svg
+      heading: Fast Transactions
+      text: |
+        The average block time
+        on the Ethereum network is
+        around 13 seconds, making
+        transactions relatively fast.
+    - image: /assets/images/ethereum/svg/scalability.svg
+      heading: High Scalability
+      text: |
+        Ethereum is capable of
+        processing up to 15
+        transactions per second
+        with the current Proof of Work
+        consensus algorithm, and
+        plans to scale further with
+        the upcoming Ethereum 2.0 upgrade.
+market:
+  heading: Ethereum Market Performance
+  image: /assets/images/ethereum/svg/performance.svg
+  id: ethereum
+slider:
+  - heading: Ethereum Ecosystem
+    image: /assets/images/ethereum/svg/wallet.svg
+    title: Ethereum Wallets
+    text: |
+      Ethereum Wallets allow you to send and receive Ether and ERC20 Tokens on the Ethereum Blockchain.
+      Our Ethereum API allows you to create and manage Ethereum addresses automatically.
+  - heading: Ethereum Ecosystem
+    image: /assets/images/ethereum/png/tether-crypto.png
+    title: USDT Token
+    text: |
+      The ERC20 Token of Tether USD (USDT) is the most used stable token on the Ethereum Blockchain. As the
+      price is linked to the US Dollar, there is no volatility.
+      With our Ethereum API you can send USDT, receive it and get information and webhooks on Tether USD
+      transactions.
+  - heading: Ethereum Ecosystem
+    image: /assets/images/ethereum/png/mobile-img.png
+    title: Perfect for Payments
+    text: |
+      Ethereum has a very fast block time of only 15 seconds. This makes it perfect to use for payments.
+      Use our Ethereum API to integrate Ethereum in your POS system or e-commerce shop.
+docs:
+  headline: Ethereum API Documentation
+  text: We provide comprehensive API documentation, including request and response examples. Take a look at our available Ethereum API functions and endpoints.
+  link: https://docs.chaingateway.io/#tag/Ethereum
+  link_text: Explore the Documentation
+  cards:
+    - heading: Wallet API
+      image: /assets/images/ethereum/svg/wallet-2.svg
+      link: https://docs.chaingateway.io/#tag/Ethereum-greater-addresses-Requests
+    - heading: Webhook API
+      image: /assets/images/ethereum/svg/notifications.svg
+      link: https://docs.chaingateway.io/#tag/Ethereum-greater-WebhooksIPN-Requests
+    - heading: Transaction API
+      image: /assets/images/ethereum/svg/transactions.svg
+      link: https://docs.chaingateway.io/#tag/Ethereum-greater-Transaction-Requests
+features:
+  heading: Ethereum API Features
+  text: Our Ethereum API is always up to date and follows the latest security practices. It is universally usable with any ERC20 token. We charge only for successful requests, and there are no token listing fees. Our support is the fastest on the market and helps with all requests.
+  cards:
+    - heading: Secure
+      image: /assets/images/ethereum/svg/lock.svg
+    - heading: High Availability
+      image: /assets/images/ethereum/svg/clock-2.svg
+    - heading: Universal
+      image: /assets/images/ethereum/svg/globe.svg
+get_started:
+  heading: Get started with Chaingateway
+  cards:
+    - heading: Data Analytics
+      image: /assets/images/tron/svg/performance.svg
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 2step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tutorials
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 1step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tron ETF
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 3step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Ecosystem
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 4step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.

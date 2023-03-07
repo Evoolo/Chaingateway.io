@@ -1,0 +1,90 @@
+explanation:
+  heading: What Is Binance Smart Chain
+  text: Binance Smart Chain (BSC) is a high-performance blockchain that runs in parallel with the Binance Chain. It is compatible with the Ethereum Virtual Machine (EVM) and supports smart contract development. BSC uses Proof of Staked Authority (PoSA) consensus mechanism that combines Proof of Stake (PoS) and Proof of Authority (PoA) to ensure high speed and low transaction fees.
+  image: /assets/images/bsc/png/what_is_bsc.png
+advantages:
+  heading: Advantages of Binance Smart Chain
+  cards:
+    - image: /assets/images/bsc/svg/smart-contract.svg
+      heading: Smart Contracts
+      text: |
+        Binance Smart Chain supports Solidity smart contracts, enabling developers to build decentralized applications on a secure and efficient network.
+    - image: /assets/images/bsc/svg/transaction-speed.svg
+      heading: Fast Transactions
+      text: |
+        Transactions on Binance Smart Chain are fast and cheap, with an average block time of 3 seconds and transaction fees that are typically less than $0.01.
+    - image: /assets/images/bsc/svg/scalability.svg
+      heading: High Scalability
+      text: |
+        Binance Smart Chain can handle up to 100 transactions per second, with the potential to scale even further in the future.
+market:
+  heading: Binance Smart Chain Market Performance
+  image: /assets/images/bsc/svg/performance.svg
+  id: bsc
+slider:
+  - heading: Binance Smart Chain Ecosystem
+    image: /assets/images/bsc/svg/wallet.svg
+    title: BSC Wallets
+    text: |
+      Binance Smart Chain wallets allow you to send and receive BNB and BEP-20 tokens on the BSC network.
+      Our BSC API allows you to create and manage BSC addresses automatically.
+  - heading: Binance Smart Chain Ecosystem
+    image: /assets/images/bsc/png/pancakeswap.png
+    title: PancakeSwap
+    text: |
+      PancakeSwap is a decentralized exchange built on Binance Smart Chain that offers fast and cheap trading of BEP-20 tokens.
+      With our BSC API you can access PancakeSwap and other BSC DApps, and get information and webhooks on transactions.
+  - heading: Binance Smart Chain Ecosystem
+    image: /assets/images/bsc/png/bakery.png
+    title: BakerySwap
+    text: |
+      BakerySwap is a decentralized exchange built on Binance Smart Chain that offers fast and cheap trading of BEP-20 tokens.
+      With our BSC API you can access BakerySwap and other BSC DApps, and get information and webhooks on transactions.
+docs:
+  headline: Polygon API Documentation
+  text: We provide comprehensive API documentation, including request and response examples. Take a look at our available Polygon API functions and endpoints.
+  link: https://docs.chaingateway.io/#tag/Polygon
+  link_text: Explore the Documentation
+  cards:
+    - heading: Wallet API
+      image: /assets/images/polygon/svg/wallet-2.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-addresses-Requests
+    - heading: Webhook API
+      image: /assets/images/polygon/svg/notifications.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-WebhooksIPN-Requests
+    - heading: Transaction API
+      image: /assets/images/polygon/svg/transactions.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-Transaction-Requests
+features:
+  heading: Polygon API Features
+  text: Our Polygon API is always up to date and follows the latest security practices. It is universally usable with any ERC20 token. We charge only for successful requests, and there are no token listing fees. Our support is the fastest on the market and helps with all requests.
+  cards:
+    - heading: Secure
+      image: /assets/images/polygon/svg/lock.svg
+    - heading: High Availability
+      image: /assets/images/polygon/svg/clock-2.svg
+    - heading: Universal
+      image: /assets/images/polygon/svg/globe.svg
+get_started:
+  heading: Get started with Chaingateway
+  cards:
+    - heading: Data Analytics
+      image: /assets/images/tron/svg/performance.svg
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 2step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tutorials
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 1step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tron ETF
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 3step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Ecosystem
+      image: /assets/images/tron/png/get_started_img.png
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 4step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.

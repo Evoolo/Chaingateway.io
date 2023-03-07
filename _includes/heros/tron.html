@@ -26,12 +26,12 @@
       <div class="col-12 col-lg-6 px-0 px-sm-3">
         <!-- DESKTOP  -->
         <div class="d-none d-lg-block tron_hero_img w-100">
-          <lottie-player src="./assets/tron-hero-img.json" background="transparent" loop="true" autoplay="true">
+          <lottie-player src=" {{ '/assets/tron-hero-img.json' | relative_url }}" background="transparent" loop="true" autoplay="true">
           </lottie-player>
         </div>
         <!-- MOBILE  -->
         <div class="d-lg-none">
-          <lottie-player src="./assets/tron-hero-img.json" background="transparent" loop="true" autoplay="true">
+          <lottie-player src="{{'/assets/tron-hero-img.json' | relative_url }}" background="transparent" loop="true" autoplay="true">
           </lottie-player>
         </div>
       </div>

@@ -1,7 +1,7 @@
 ---
 layout: tutorials
 title: Tutorial to send Tron or TRC20 Tokens with PHP
-permalink: /tutorials/php-tron-get-trc20-balance
+permalink: /tutorials/php-tron-send-trc20-tokens
 ---
 
 To send or receive ERC-20 tokens, you need an address that is compatible with the Tron blockchain. Of course, most people use their wallets to send TRC20 tokens. But what if you need to make hundreds of thousands of transactions? In this case, you need a better way to send TRC20 tokens in an automated way. We have written a detailed tutorial for this purpose. Read more.

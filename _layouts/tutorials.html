@@ -1,0 +1,65 @@
+---
+layout: default
+hero: /heros/none.html
+---
+
+
+<div class="container d-flex gap-2 text-white my-5">
+  <div class="w-100 d-lg-none">
+
+    <div class="dropdown">
+      <button class="btn btn-nav dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Navigation
+      </button>
+      <ul class="dropdown-menu w-100">
+        {% for item in site.data.tutorials %}
+        <li><h3 class="dropdown-header pt-3"><strong>{{ item.section }}</strong></h3></li>
+        <li><hr class="dropdown-divider"></li>
+
+
+        {% for subitem in item.navigation %}
+        <li><h6 class="dropdown-header">{{ subitem.section }} </h6></li>
+        {% for link in subitem.links %}
+        <li><a class="dropdown-item" href="{{ link.url | relative_url }}"> {{link.name}}</a></li>
+        {% endfor %}
+        {% endfor %}
+
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container d-flex gap-2 text-white my-5">
+  <div class="flex-shrink-0 p-3 rounded-2 d-none d-lg-block" style="width: 280px; background: rgba(0, 128, 128, 0.2)">
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-light text-decoration-none">
+      <h1><span class="fs-5 fw-semibold text-white">Tutorials</span></h1>
+    </a>
+
+    {% for item in site.data.tutorials %}
+    <p class="fs-10 fw-semibold text-white border-bottom">{{ item.section }}</p>
+
+    <ul class="list-unstyled ps-0">
+    {% for subitem in item.navigation %}
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#collapse{{ item.section | slugify }}{{ subitem.section | slugify }}" aria-expanded="false">
+          {{ subitem.section}}
+        </button>
+        <div class="collapse" id="collapse{{ item.section | slugify }}{{ subitem.section | slugify }}">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            {% for link in subitem.links %}
+            <li><a href="{{ link.url | relative_url }}" class="link-light rounded">{{link.name}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+  <div class="flex-grow-1 rounded-2 p-2" style="background: rgba(0, 128, 128, 0.2)" >
+
+    <h2 class="fs-5 fw-semibold text-white border-bottom p-2">{{page.title}}</h2>
+
+    {{content}}
+  </div>
+</div>

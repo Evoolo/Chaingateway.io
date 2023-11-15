@@ -1,0 +1,684 @@
+@import url(./style.css);
+
+.font_28 {
+  font-size: var(--font-28) !important;
+}
+
+/*============================== DEFINE HERO SECTION CSS ==============================*/
+.tron_hero_img {
+  position: absolute;
+  top: -210px;
+  right: -300px;
+  max-width: 1100px;
+  z-index: 0;
+}
+
+.polygon_hero_img{
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  max-width: 1100px;
+  z-index: 0;
+}
+
+.bitcoin_hero_img{
+  position: absolute;
+  max-width:608px;
+  max-height:608px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/bitcoin/bg.png");
+}
+
+.hero_left_shade {
+  top: 60% !important;
+  max-width: 450px !important;
+}
+
+.bullar_shade {
+  left: 0;
+  right: 0;
+  top: -142px !important;
+  max-height: 50px;
+  z-index: 0;
+}
+
+.header_bg {
+  background-image: url("/assets/images/tron/png/hero_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header_bg_ethereum {
+  background-image: url("/assets/images/ethereum/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.decentralize_text {
+  position: relative !important;
+}
+
+.decentralize_text::after {
+  top: 45% !important;
+  padding-left: 24px !important;
+  left: 240px !important;
+  position: absolute;
+  content: "";
+  border: 2px solid !important;
+  border-image-slice: 1 !important;
+  border-image-source: linear-gradient(102.55deg,
+      #12a09e -1.89%,
+      #a81fe9 130.65%) !important;
+  width: 64px !important;
+  height: 2px !important;
+}
+
+.text_linear_grandient2 {
+  background: -o-linear-gradient(347.45deg,
+      #12a09e -100%,
+      #12a09e -65%,
+      #a81fe9 95.22%,
+      #a81fe9 130.65%) !important;
+  background: linear-gradient(102.55deg,
+      #12a09e -100%,
+      #12a09e -65%,
+      #a81fe9 95.22%,
+      #a81fe9 130.65%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  --text-fill-color: transparent !important;
+}
+
+.max_w_subpara {
+  max-width: 476px;
+}
+
+/* =================================DEFINE TRON  ECOSYTEM CSS================================= */
+.tron-ecosytem .slick-dots li.slick-active button:before {
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%) !important;
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.tron-ecosytem .slick-dots li button:before {
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%) !important;
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.advantages_shade {
+  bottom: 25% !important;
+}
+
+.tron_ecosytem {
+  min-height: 60vh !important;
+}
+
+.wallet {
+  max-width: 283px !important;
+}
+
+
+.wallet_box_shadow {
+  position: relative;
+}
+
+.wallet_box_shadow:after {
+  background-image: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%) !important;
+  background-image: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%) !important;
+  opacity: 1 !important;
+  content: "" !important;
+  width: 50% !important;
+  height: 50% !important;
+  position: absolute !important;
+  top: 20% !important;
+  left: 21% !important;
+  z-index: -1 !important;
+  -webkit-filter: blur(60px) !important;
+  filter: blur(60px) !important;
+  opacity: 1 !important;
+  max-width: 300px !important;
+  max-width: 220px !important;
+}
+
+.crypto_box_shadow {
+  position: relative !important;
+}
+
+.crypto_box_shadow:after {
+  background-image: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background-image: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  opacity: 1;
+  content: "";
+  width: 60%;
+  height: 60% !important;
+  position: absolute;
+  top: 22%;
+  left: 34%;
+  z-index: -1;
+  -webkit-filter: blur(60px);
+  filter: blur(30px);
+  opacity: 0.4 !important;
+  max-width: 300px !;
+  max-width: 182px !important;
+}
+
+.mobile-box-shadow {
+  position: relative;
+}
+
+.mobile-box-shadow:after {
+  background-image: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background-image: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  opacity: 1;
+  content: "";
+  width: 50%;
+  height: 50% !important;
+  position: absolute;
+  top: 10%;
+  left: 21%;
+  z-index: -1;
+  -webkit-filter: blur(60px);
+  filter: blur(60px);
+  opacity: 0.6 !important;
+  max-width: 300px !;
+  max-width: 182px !important;
+}
+
+/*======================DEFINE WHAT IS TRON======================*/
+
+.what_is_tron_bg {
+  background-image: url("/assets/images/tron/png/what_is_Tron_bg.png  ");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 605px;
+}
+
+.what_text {
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.translate_x {
+  -webkit-transform: translateX(-14%);
+  -ms-transform: translateX(-14%);
+  transform: translateX(-14%);
+}
+
+.read_more {
+  position: relative;
+  padding: 12px 30px;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.read_more::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  padding: 1px;
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.read_more_text {
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text !important;
+}
+
+.read_more:hover {
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  -webkit-text-fill-color: #fff;
+  border-radius: 4px;
+}
+
+
+/* =================DEFINE PERFORMANCE CSS================= */
+.tron_market {
+  max-width: 315px;
+}
+
+.market_performance {
+  top: 50%;
+  max-width: 700px !important;
+  z-index: 1 !important;
+}
+
+.performance-img {
+  max-width: 475px !important;
+}
+
+.performance_cards {
+  padding: 12px 28px 12px 32px;
+  max-width: 206px !important;
+  background: rgba(66, 232, 224, 0.1);
+  border-left: 2px solid !important;
+  border-image-slice: 1 !important;
+  border-image-source: linear-gradient(180deg,
+      #85d3ff 0%,
+      rgba(84, 114, 220, 0.541667) 70.31%,
+      rgba(26, 60, 178, 0) 100%) !important;
+}
+
+.performance_cards h4 {
+  background: -o-linear-gradient(348.1deg,
+      #9747ff -1.91%,
+      #0865fb 101.34%) !important;
+  background: linear-gradient(101.9deg,
+      #9747ff -1.91%,
+      #0865fb 101.34%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  --text-fill-color: transparent !important;
+}
+
+.best_img {
+  height: 48px !important;
+  width: 48px !important;
+}
+
+/* =============================DEFINE DOCUMENTATION CSS============================= */
+
+.documentation_bg {
+  background-image: url("../images/tron/png/documentatio-bg-img.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center !important;
+}
+
+.documentation_shade {
+  top: -10% !important;
+}
+
+.documentation_icons {
+  min-width: 48px !important;
+  max-width: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+}
+
+.web3_img {
+  min-width: 107px !important;
+  max-width: 107px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+}
+
+.documentation_card {
+  border-image-slice: 1 !important;
+  border: 2px solid !important;
+  border-image-source: linear-gradient(228.66deg,
+      rgba(168, 31, 233, 0.3) 2.71%,
+      rgba(255, 255, 255, 0) 92.11%) !important;
+  background: -o-linear-gradient(347.45deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%) !important;
+  background: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%) !important;
+  height: 203px;
+  width: 180px;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+.documentation_card:hover {
+  -webkit-box-shadow: 0px 13px 29px -12px rgba(47, 135, 165, 0.69);
+  box-shadow: 0px 13px 29px -12px rgba(47, 135, 165, 0.69);
+}
+
+.documentation_card img {
+  max-width: 72px !important;
+}
+
+/*======================DEFINE TRON FEATURES======================*/
+.tron_bg_stay {
+  background: rgba(0, 128, 128, 0.2);
+}
+
+.tron_features {
+  background: -o-linear-gradient(347.45deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%);
+  background: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%);
+  min-width: 179px !important;
+  max-width: 179px !important;
+  max-height: 203px;
+  min-height: 203px;
+  cursor: pointer !important;
+}
+
+.tron_features img {
+  max-width: 75px !important;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.tron_features:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/*======================DEFINE GETTING STARTED======================*/
+.chaingateway_shade {
+  top: -30% !important;
+  max-width: 510px !important;
+}
+
+.letter_spacing {
+  letter-spacing: 0.01em;
+}
+
+.bg_blur {
+  background: -o-linear-gradient(347.45deg, rgba(18, 160, 158, 0.1) -1.89%, rgba(168, 31, 233, 0.1) 130.65%);
+  background: linear-gradient(102.55deg, rgba(18, 160, 158, 0.1) -1.89%, rgba(168, 31, 233, 0.1) 130.65%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+}
+
+.bg_blur:active {
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.mw_get_started {
+  max-width: 368px;
+}
+
+.tab_panel2 {
+  display: none;
+}
+
+.tab_panel3 {
+  display: none;
+}
+
+.tab_panel4 {
+  display: none;
+}
+
+.active1 {
+  background: -o-linear-gradient(348.1deg, #9747FF -1.91%, #0865FB 101.34%);
+  background: linear-gradient(101.9deg, #9747FF -1.91%, #0865FB 101.34%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+}
+
+.mt_min_get_started {
+  margin-top: -40px;
+}
+
+/*======================DEFINE WHAT ARE YOU WAITING======================*/
+
+.tron_wating_bg_img {
+  background-image: url("../images/png/wating-bg.png") !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+}
+
+.badge {
+  background: -o-linear-gradient(347.92deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  background: linear-gradient(102.08deg,
+  #12a09e -9.95%,
+  #a81fe9 123.17%) !important;
+}
+
+.tron_start_btn {
+  padding: 14px 32px;
+  border: 1px solid transparent !important;
+  background: -o-linear-gradient(347.92deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  background: linear-gradient(102.08deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+}
+
+.tron_start_btn:hover {
+  background: -o-linear-gradient(347.92deg,
+      #a81fe9 -9.95%,
+      #12a09e 123.17%) !important;
+  background: linear-gradient(102.08deg,
+      #a81fe9 -9.95%,
+      #12a09e 123.17%) !important;
+}
+
+/* =============================DEFINE FOOTER CSS START============================= */
+.tron_footer_bg {
+  background: -o-linear-gradient(350.12deg,
+      rgba(18, 160, 158, 0.1) 11.12%,
+      rgba(168, 31, 233, 0.1) 89.94%);
+  background: linear-gradient(99.88deg,
+      rgba(18, 160, 158, 0.1) 11.12%,
+      rgba(168, 31, 233, 0.1) 89.94%);
+  width: 100%;
+}
+
+
+/* ============================== MEDIA QUERY =================================== */
+
+@media (min-width: 992px) {
+  .tron_hero_section {
+    min-height: calc(75vh - 90px) !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tron_hero_section {
+    min-height: calc(100vh - 90px) !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tron_hero_img {
+    top: -100px !important;
+    right: -350px !important;
+    max-width: 1200px !important;
+  }
+}
+
+@media (max-width: 1367.98px) {
+  .bullar_shade {
+    top: -114px !important;
+  }
+
+  .tron_hero_img {
+    right: -250px !important;
+    top: -200px !important;
+    max-width: 1000px !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .tron_features {
+    min-width: 160px !important;
+    max-width: 160px !important;
+  }
+
+  .tron_ecosytem {
+    min-height: 40vh !important;
+  }
+
+  .translate_x {
+    -webkit-transform: translateX(-10%) !important;
+    -ms-transform: translateX(-10%) !important;
+    transform: translateX(-10%) !important;
+  }
+
+  .what_is_tron_bg {
+    height: 100% !important;
+  }
+
+  .tron_hero_img {
+    top: 0px !important;
+    right: -230px !important;
+    max-width: 900px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .performance_para {
+    font-size: 13px !important;
+  }
+
+  .performance_cards {
+    padding: 12px !important;
+  }
+
+  .translate_x {
+    -webkit-transform: translateX(-3%);
+    -ms-transform: translateX(-3%);
+    transform: translateX(-3%);
+  }
+
+  .wallet_box_shadow:after {
+    -webkit-filter: blur(40px) !important;
+    filter: blur(40px) !important;
+  }
+
+  .mobile-box-shadow:after {
+    -webkit-filter: blur(40px) !important;
+    filter: blur(40px) !important;
+  }
+
+  .crypto_box_shadow:after {
+    width: 50% !important;
+  }
+
+  .bullar_shade {
+    top: -70px !important;
+  }
+
+  .translate_x {
+    -webkit-transform: translateX(0%) !important;
+    -ms-transform: translateX(0%) !important;
+    transform: translateX(0%) !important;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .tron_wating_bg_img {
+    border: 2px solid #5765c0 !important;
+    border-radius: 10px !important;
+  }
+
+  .wallet_box_shadow:after {
+    opacity: 0.4 !important;
+  }
+
+  .bullar_shade {
+    top: -40px !important;
+  }
+
+  .features_card {
+    height: 100% !important;
+    padding: 30px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .px_xsm_12 {
+    padding: 0px 12px !important;
+  }
+
+  .tron_start_btn {
+    padding: 10px 24px !important;
+  }
+
+  .bullar_shade {
+    top: -26px !important;
+  }
+
+  .documentation_card {
+    height: 170px !important;
+    width: 140px !important;
+  }
+
+  .performance_cards {
+    max-width: none !important;
+  }
+
+  .decentralize_text::after {
+    left: 200px !important;
+  }
+
+  .wallet {
+    max-width: 200px !important;
+  }
+
+  .wallet_box_shadow:after {
+    opacity: 0.4 !important;
+    top: 35% !important;
+    left: 21% !important;
+    opacity: 1 !important;
+    max-width: 220px !important;
+  }
+
+  .mobile-box-shadow:after {
+    top: 35% !important;
+  }
+
+  .wallet_box_shadow:after {
+    -webkit-filter: blur(30px) !important;
+    filter: blur(30px) !important;
+  }
+
+  .tron-ecosytem.slick-dots {
+    bottom: -15px !important;
+  }
+
+  .tron-ecosytem .slick-dots {
+    bottom: -16px !important;
+  }
+
+  .tron_features {
+    max-height: 180px !important;
+    min-height: 180px !important;
+  }
+}
+
+@media (max-width: 360.98px) {
+  .documentation_card {
+    height: 150px !important;
+    width: 130px !important;
+  }
+}

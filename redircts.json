@@ -1,0 +1,110 @@
+[
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/index"
+        },
+        "Redirect": {
+            "ReplaceKeyPrefixWith": "/"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/tutorial",
+            "HttpErrorCodeReturnedEquals": "404"
+        },
+        "Redirect": {
+            "HostName": "chaingateway.io",
+            "ReplaceKeyPrefixWith": "/tutorials.html"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/account"
+        },
+        "Redirect": {
+            "HostName": "app.chaingateway.io",
+            "ReplaceKeyPrefixWith": "/"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/register"
+        },
+        "Redirect": {
+            "HostName": "app.chaingateway.io",
+            "ReplaceKeyPrefixWith": "register"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/docs-tron"
+        },
+        "Redirect": {
+            "HostName": "docs.chaingateway.io",
+            "ReplaceKeyPrefixWith": "/#9e3ebb4f-5898-4e97-a0d4-18faceca1b9d"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/docs-ethereum"
+        },
+        "Redirect": {
+            "HostName": "docs.chaingateway.io",
+            "ReplaceKeyPrefixWith": "/#a2e22441-fb33-40ce-9cbb-66a3a7d4ce32"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/docs-binance-smart-chain"
+        },
+        "Redirect": {
+            "HostName": "docs.chaingateway.io",
+            "ReplaceKeyPrefixWith": "/#3b396e47-f8ac-4894-abc0-e1ae5ad13cc1"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/v2-beta"
+        },
+        "Redirect": {
+            "HostName": "chaingateway.io",
+            "ReplaceKeyPrefixWith": "/"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/verify-address"
+        },
+        "Redirect": {
+            "HostName": "app.chaingateway.io",
+            "ReplaceKeyPrefixWith": "/login"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/docs"
+        },
+        "Redirect": {
+            "HostName": "docs.chaingateway.io",
+            "ReplaceKeyPrefixWith": "/"
+        }
+    },
+    {
+        "Condition": {
+            "KeyPrefixEquals": "/resetpassword"
+        },
+        "Redirect": {
+            "HostName": "app.chaingateway.io",
+            "ReplaceKeyPrefixWith": "/forget-password"
+        }
+    },
+    {
+        "Condition": {
+            "HttpErrorCodeReturnedEquals": "404"
+        },
+        "Redirect": {
+            "HostName": "chaingateway.io",
+            "ReplaceKeyPrefixWith": "/"
+        }
+    }
+]

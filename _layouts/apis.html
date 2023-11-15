@@ -1,0 +1,323 @@
+---
+layout: default
+title: Tron Api
+hero: /heros/tron.html
+permalink: /:basename
+---
+
+{% assign source = site.data.endpoints[page.api] %}
+
+
+<section class="what_is_tron_bg py-5 position-relative">
+    <div class="position-absolute top-0 bullar_shade">
+        <img style="width: 100%;" class="h-100" src="{{ 'assets/images/tron/png/bullar-shade-img.png' | relative_url }}"
+            alt="bullar-shade-img">
+    </div>
+    <div class="container">
+        <div class="row align-items-center justify-content-between py-lg-5">
+            <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-delay="600">
+                <img style="width: 100%;" class=" translate_x" src="{{ source.explanation.image | relative_url }}"
+                    alt="{{ source.explanation.alt }}">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="600">
+                <h2 class="what_text text-capitalize ff_dosis what_text_bg fw-bold font_3xl sub_heading">{{
+                    source.explanation.heading }}</h2>
+                <p class="mb-0 mt-3 sub_para max_w_subpara2"> {{ source.explanation.text }}</p>
+                <!-- <div class="text-capitalize fw-semibold font_lg read_more read_more_text cursor_pointer">Read
+            more</div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--==============================DEFINE ADVANTAGES SECTION START================================-->
+<section class="py-sm-5 my-lg-5 position-relative">
+    <div class="position-absolute end-0 advantages_shade z-index-0">
+        <img style="width: 100%;" src="{{ 'assets/images/tron/png/advantages-shade.png' | relative_url }}" alt="left-side-shade" />
+    </div>
+    <div>
+        <img style="width: 100%;" class="position-absolute start-0 market_performance z-index-0"
+            src="{{ 'assets/images/tron/png/market-performanse.png' | relative_url }}" alt="market-performance" />
+    </div>
+    <div class="container feactures_container pb-lg-5 position-relative z-index-5">
+        <div class="text-center mb-4 mb-sm-5 mb-lg-0" data-aos="zoom-in">
+            <h2 class="sub_heading text-capitalize">{{source.advantages.heading}}</h2>
+        </div>
+        <div class="row justify-content-center mt-2 pt-lg-5 position-relative z-index-5">
+            {% for card in source.advantages.cards %}
+            <div class="col-sm-6 col-lg-4 mt-sm-0" data-aos="zoom-in" data-aos-delay="300">
+                <div class="features_card features">
+                    <div class="text-left">
+                        <div class=" mx-auto">
+                            <img class="w-100" style="height:90px" src="{{ card.image | relative_url }}" alt="{{ card.alt }}" />
+                        </div>
+                        <h3 class="font_2xl fw-semibold ff_dosis color_offwhite mb-2 pb-1 mt-4 text-capitalize">
+                            {{ card.heading }}
+                        </h3>
+                        <p class="sub_para">
+                            {{ card.text }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<!-- ========================= TRON MARKET PERFORMACE SECTION START ===========================  -->
+<section class="pt-5 mt-lg-5 overflow-hidden">
+    <div class="container">
+        <div
+            class="row align-items-center justify-content-center justify-content-md-between position-relative z-index-5">
+            <div class="text-center mb-4 mb-sm-5">
+                <h2 class="sub_heading mb-md-3" data-aos="zoom-in">{{ source.market.heading }}</h2>
+            </div>
+            <div class="col-sm-6 col-md-6  col-xxl-auto">
+                <div class="performance-img" data-aos="zoom-in">
+                    <img class="w-100" src="{{ source.market.image | relative_url }}" alt="{{ source.market.alt }}" />
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-xxl-auto mt-4 mt-md-0" data-aos="fade-left" data-aos-delay="600">
+                <script type="text/javascript" src="https://widget.coinlore.com/widgets/new-widget.js"></script>
+                <div class="coinlore-coin-widget" data-mcap="1" data-mcurrency="usd" data-d7="1" data-cwidth="100"
+                    data-rank="1" data-vol="1" data-id="{{source.market.id}}" data-bcolor="#071F47"
+                    data-tcolor="#9747ff" data-ccolor="#fff" data-pcolor="#fff"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================= DEFINE TRON ECOSYSTEM SECTION START =========================== -->
+<section class="my-sm-5 my-md-3 my-lg-5 pt-sm-5 pt-md-0 position-relative overflow-hidden">
+    <div class="container">
+        <div class="position-relative z-index-100 tron-ecosytem">
+            <div class="slider_responsive pt-5 py-sm-5" >
+                {% for card in source.slider %}
+                <div class="tron_ecosytem d-flex align-items-center mx-lg-5 mx-3">
+                    <div
+                        class="row flex-column-reverse flex-md-row justify-content-center justify-content-between mt-2 pt-lg-5 position-relative z-index-5">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-delay="600">
+                            <h2 class="sub_heading mb-md-3">{{ card.heading }}</h2>
+                            <p class="font_28 color_offwhite ff_open">{{ card.title }}</p>
+                            <p class="sub_para">
+                                {{ card.text }}
+                            </p>
+                        </div>
+                        <div class="col-md-5" data-aos="fade-left" data-aos-delay="600">
+                            <div class="wallet mx-auto ms-md-auto wallet_box_shadow mb-4 mb-md-0">
+                                <img class="w-100 " src="{{ card.image | relative_url }}" alt="{{ card.alt }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+</section>
+<!-- ================================ DEFINE DOCUMENTATION START ================================-->
+<section class="py-5 documentation_bg position-relative">
+    <div class="position-absolute end-0 documentation_shade z-index-0">
+        <img src="{{ 'assets/images/tron/png/advantages-shade.png' | relative_url }}" alt="left-side-shade" />
+    </div>
+    <div class="container container_modified py-lg-5">
+        <div
+            class="row flex-column flex-lg-row justify-content-center align-items-center py-sm-5 position-relative z-index-50">
+            <div class="col-sm-10 col-lg-6" data-aos="fade-right">
+                <div class="d-flex justify-content-start justify-content-lg-center align-items-center">
+                    <div class="col-sm-auto col-lg-6 mb-4 pb-3 pb-lg-0 mb-lg-0">
+                        <a href="{{ source.docs.cards[0].link }}" target="_blank" rel="noopener noreferrer">
+                            <div
+                                class="ms-lg-auto documentation_card d-flex align-items-center justify-content-center flex-column mb-sm-3">
+                                <img class="mb-1 mx-auto" src="{{ source.docs.cards[0].image  | relative_url}}"
+                                    alt="{{ source.docs.cards[0].alt }}" />
+                                <h4 class="font_xl color_offwhite ff_dosis fw-bold pt-3">
+                                    {{ source.docs.cards[0].heading }}
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="{{ source.docs.cards[1].link }}" target="_blank" rel="noopener noreferrer">
+                            <div
+                                class="ms-lg-auto documentation_card d-flex align-items-center justify-content-center flex-column mb-sm-3">
+                                <img class="mb-1 mx-auto" src="{{ source.docs.cards[1].image | relative_url }}"
+                                    alt="{{ source.docs.cards[1].alt }}" />
+                                <h4 class="font_xl color_offwhite ff_dosis fw-bold pt-3">
+                                    {{ source.docs.cards[1].heading }}
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-auto col-lg-6 mb-4 pb-3 pb-lg-0 mb-lg-0">
+                        <a href="{{ source.docs.cards[2].link }}" target="_blank" rel="noopener noreferrer">
+                            <div
+                                class="ms-lg-auto documentation_card d-flex align-items-center justify-content-center flex-column mb-3 ms-3 ms-sm-4">
+                                <img class="mb-1 mx-auto" src="{{ source.docs.cards[2].image | relative_url }}"
+                                    alt="{{ source.docs.cards[2].alt }}" />
+                                <h4 class="font_xl color_offwhite ff_dosis fw-bold pt-3">
+                                    {{ source.docs.cards[2].heading }}
+                                </h4>
+                            </div>
+                        </a>
+                        {% if source.docs.cards[3] %}
+                        <a href="{{ source.docs.cards[2].link }}" target="_blank" rel="noopener noreferrer">
+                            <div
+                                class="ms-lg-auto documentation_card d-flex align-items-center justify-content-center flex-column mb-3 ms-3 ms-sm-4">
+                                <img class="mb-1 mx-auto" src="{{ source.docs.cards[2].image | relative_url}}"
+                                    alt="{{ source.docs.cards[2].alt }}" />
+                                <h4 class="font_xl color_offwhite ff_dosis fw-bold pt-3">
+                                    {{ source.docs.cards[2].heading }}
+                                </h4>
+                            </div>
+                        </a>
+                        {% endif %}
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm-10 col-lg-6 col-xl-5" data-aos="fade-left">
+                <div>
+                    <h2 class="sub_heading mb-md-4"> {{ source.docs.headline }}</h2>
+                    <p class="sub_para pt-2 pe-xxl-5">
+                        {{ source.docs.text }}
+                    </p>
+                    <div class="mt-sm-4 pt-3" data-aos="fade-right" data-aos-delay="1800">
+                        <a href="{{ source.docs.link }}" target="_blank" rel="noopener noreferrer">
+                            <button class="me-auto me-sm-0 mb-4 mb-lg-0 login_btn text-start" type="button">
+                                {{ source.docs.link_text }}
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================= DEFINE TRON FEATURES SECTION START ========================================== -->
+<section class="mb-lg-5 pb-sm-5 position-relative  z">
+    <div class="position-relative d-flex align-items-center tron_bg_stay py-5">
+        <div class="container container_modified custom_container py-sm-5">
+            <div class="row align-items-center justify-content-center justify-content-lg-between py-lg-3">
+                <div class="col-10 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-delay="600">
+                    <div class="text-center text-lg-start position-relative z-index-5 mb-4 mb-lg-0">
+                        <h2 class="ff_dosis fw-bold font_3xl text-white text-capitalize">
+                            {{ source.features.heading }}
+                        </h2>
+                        <p class="sub_para mt-4">
+                            {{ source.features.text }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-7 col-xl-auto mx-auto mx-lg-0" data-aos="fade-left" data-aos-delay="600">
+                    <div
+                        class="d-flex justify-content-center justify-content-sm-start flex-wrap flex-sm-nowrap gap-4 gap-sm-2 gap-xxl-3">
+                        {% for card in source.features.cards %}
+                        <div class="col-auto col-sm-4">
+                            <div
+                                class="tron_features mx-auto  h-100 d-flex align-items-center justify-content-evenly flex-column text-center">
+                                <div class="mx-auto">
+                                    <img class="w-100 mx-auto" src="{{ card.image | relative_url}}" alt="{{ card.alt }}" />
+                                </div>
+                                <h4 class="text-white fw-semibold ff_dosis font_xl fw-bold">
+                                    {{ card.heading }}
+                                </h4>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================= Get started with Chaingateway ========================================== -->
+<!--<section class="my-5 py-sm-5 position-relative ">
+    <div class="position-absolute start-0 top-0 chaingateway_shade z-index-0">
+        <img class="w-100" src="{{ 'assets/images/tron/png/market-performanse.png' | relative_url }}" alt="left-side-shade" />
+    </div>
+    <div class="container py-lg-5 ">
+        <div class="row justify-content-between mb-4 mb-md-0">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="600">
+                <h2
+                    class="ff_dosis mx-auto color_offwhite font_3xl fw-bold text-capitalize max_w_subpara2 letter_spacing text-center text-lg-start">
+                    {{ source.get_started.heading}}
+                </h2>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="600">
+                <div class="text-center text-xl-start mt-md-5 mt-xl-0">
+                    <ul class="d-md-flex p-0 justify-content-center">
+                        {% for card in source.get_started.cards %}
+                        <li id="tab{{ forloop.index }}"
+                            class="mt-md-0 bg_blur ms-md-2 text-nowrap cursor_pointer fw-semibold font_xl color_offwhite  {% if forloop.first %} active1 {% endif %}">
+                            {{ card.heading }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="row mt-2">
+            <div class="row flex-column-reverse flex-lg-row align-items-center justify-content-between mt_min_get_started ">
+            {% for card in source.get_started.cards %}
+                <div class="col-lg-4 text-center text-lg-start tab_panel{{ forloop.index }}" data-aos="fade-right"
+                    data-aos-delay="700">
+                    <h2 class="fw-semibold color_offwhite font_28">{{ card.heading }}</h2>
+                    <p class="mt-3 sub_para mw_get_started mx-auto mx-lg-0">{{ card.text }}
+                    </p>
+                    <div class="mt-sm-4 pt-3" data-aos="fade-right" data-aos-delay="800">
+                        <a href="{{ card.button_link }}" class="me-auto me-sm-0  login_btn text-start" type="button">
+                            {{ card.button_text }}
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+            {% for card in source.get_started.cards %}
+                <div class="col-lg-8 text-center text-md-start tab_image{{ forloop.index }}" data-aos="fade-left"
+                    {% if forloop.first %} style="display:block" {% else %} style="display:none"  {% endif %}>
+                    <img class="img-fluid" src=" {{ card.image | relative_url }}" alt="{{ card.heading | slugify }}">
+                </div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+
+
+
+</section>-->
+<!-- =========================  WHAT ARE YOU WAITING========================= -->
+<section class="mt-0 mt-sm-5 my-5 overflow-hidden">
+    <div class="container custom_container pb-lg-5">
+        <div class="row justify-content-center mb-md-5">
+            <div class="col-12" data-aos="fade-down">
+                <div class="tron_wating_bg_img" data-aos="zoom-in">
+                    <h3
+                        class="font_3xl fs_22 fw-bold ff_dosis color_offwhite text-center pt-4 pb-3 py-sm-5 mb-0 mb-sm-1">
+                        Unlock the Power of Blockchain with Just a Click!
+                    </h3>
+                    <div
+                        class="d-flex flex-column flex-md-row align-items-center justify-content-between px-3 px-sm-5 pb-4 pb-sm-5">
+                        <div class="col-md-8 col-xl-auto text-center text-md-start">
+                            <h4 class="fw-semibold font_2xl ff_dosis color_offwhite text-capitalize">
+                                Join for Free and Get Your Personal API Key Instantly!
+                            </h4>
+                            <p class="sub_para">
+                                Ready to explore the limitless possibilities of blockchain technology?<br>
+                                Create your account now and receive your very own API Key within seconds!<br>
+                                With this key, you'll have immediate access to our robust Blockchain API.
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-xl-auto text-center text-md-end">
+                            <a rel="nofollow" href="https://app.chaingateway.io/register">
+                                <button class="tron_start_btn color_offwhite ff_open fw-semibold">
+                                    Join Now and Get Your Key!
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ content }}

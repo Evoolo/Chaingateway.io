@@ -1,0 +1,24 @@
+image: ruby:3.0.5
+
+pipelines:
+    branches:
+      main:
+        - step:
+            name: Generate the blog with Jekyll
+            script:
+              - bundle install
+              - bundle exec jekyll build --destination public
+            artifacts:
+              - public/**
+        - step:
+            name: Deploy to S3 Bucket
+            deployment: Production
+            script:
+              - pipe: atlassian/ftp-deploy:0.4.1
+                variables:
+                  USER: 'bitblade'
+                  PASSWORD: '$FTP_PASSWORD'
+                  SERVER: 'v2202304164651227082.happysrv.de'
+                  REMOTE_PATH: '/web/chaingateway.io/public_html/'
+                  LOCAL_PATH: './public/'
+                  

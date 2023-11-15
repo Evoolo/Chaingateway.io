@@ -1,0 +1,119 @@
+explanation:
+  heading: What Is Tron
+  text: TRON is a blockchain network that runs on software specifically developed by the TRON Foundation. Alongside having its own cryptocurrency token in the form of the TRX token, it also enables other currencies as well as products to be developed on top of it due to the fact that it has smart contracts.
+  image: /assets/images/tron/png/what_is_tron.png
+  alt: "Illustration of Tron logo"
+
+advantages:
+  heading: Advantages of tron
+  cards:
+    - image: /assets/images/tron/svg/web3-img.svg 
+      heading: Smart Contracts 
+      text: |
+        Tron offers the ability to 
+        develop Smart Contracts that 
+        run on the Tron EVM
+      alt: "Illustration of a globe icon"
+    - image: /assets/images/tron/svg/clock.svg
+      heading: Fast Transactions 
+      text: |
+        The block time of the 
+        Tron Blockchain is as low 
+        as 3 seconds. 
+      alt: "Illustration of a transactions icon"
+    - image: /assets/images/tron/svg/best.svg
+      heading: High Scalability 
+      text: | 
+        The Tron Blockchain 
+        can handle up to 2.000 
+        Transactions per second.
+      alt: "Illustration of a limited supply icon"
+market:
+  heading: Tron Market Performance
+  image: /assets/images/tron/svg/performance.svg
+  id: tron
+  alt: "Graph of tron market performance over time"
+
+slider:
+  - heading: Tron Ecosystem
+    image: /assets/images/tron/svg/wallet.svg
+    title: Tron Wallets
+    text: |
+      Tron Wallets allow you to send and receive Tron, TRC10 Tokens and TRC20 Tokens on the Tron Blockchain.
+      Our Tron API allows you to create and manage Tron addresses automatically.   
+    alt: "Illustration of a wallet icon"
+  - heading: Tron Ecosystem
+    image: /assets/images/tron/png/tether-crypto.png
+    title: USDT Token
+    text: | 
+      The TRC20 Token of Tether USD (USDT) is the most used stable token on the Tron Blockchain. As the
+      price is linked to the US Dollar, there is no volatility.
+      With our Tron API you can send USDT, receive it and get information and webhooks on Tether USD
+      transactions.
+    alt: "Tether logo"
+
+  - heading: Tron Ecosystem
+    image: /assets/images/tron/png/mobile-img.png
+    title: Perfect for Payments
+    text: |
+      Tron has a very fast block time of only 3 seconds. This makes it perfect to use for payments.
+      Use our Tron API to integrate Tron in your POS system or e-commerce shop.
+    alt: "Illustration of a block time"
+docs:
+  headline: API Documentation
+  text: We wrote a comprehensive documentation including request and response examples. Have a look at our available Tron API functions and endpoints. 
+  link: https://docs.chaingateway.io/#tag/Tron
+  link_text: Explore the Documentation
+  cards:
+    - heading: Wallet Api
+      image: /assets/images/tron/svg/wallet-2.svg
+      link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      alt: "Illustration of a wallet icon"
+    - heading: Webhook Api
+      image: /assets/images/tron/svg/notifications.svg
+      link: https://docs.chaingateway.io/#tag/Tron-greater-WebhooksIPN-Requests
+      alt: "Illustration of a notification icon"
+    - heading: Transaction Api
+      image: /assets/images/tron/svg/transactions.svg
+      link: https://docs.chaingateway.io/#tag/Tron-greater-Transaction-Requests
+      alt: "Illustration of a transaction icon"
+features:
+  heading: Tron API Features 
+  text: Our Tron API is always up to date and follows the most modern security practices. It is also universally usable with any TRC20 token. We only charge for successful requests and there are no token listing fees. Our support is the fastest on the market and helps with all requests. 
+  cards:
+    - heading: Secure
+      image: /assets/images/tron/svg/lock.svg
+      alt: "Illustration of a lock icon"
+    - heading: High availability
+      image: /assets/images/tron/svg/clock-2.svg
+      alt: "Illustration of a clock icon"
+    - heading: Universal
+      image: /assets/images/tron/svg/globe.svg
+      alt: "Illustration of a globe icon"
+get_started:
+  heading: Get started with Chaingateway 
+  cards:
+    - heading: Data Analytics
+      image: /assets/images/tron/svg/performance.svg
+      alt: "Illustration of a performance chart icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 2step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow. 
+    - heading: Tutorials
+      image: /assets/images/tron/png/get_started_img.png
+      alt: "Illustration of a tutorial icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 1step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow. 
+    - heading: Tron ETF
+      image: /assets/images/tron/png/get_started_img.png
+      alt: "Illustration of a Tron ETF icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 3step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow. 
+    - heading: Ecosystem
+      image: /assets/images/tron/png/get_started_img.png
+      alt: "Illustration of an ecosystem icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 4step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.

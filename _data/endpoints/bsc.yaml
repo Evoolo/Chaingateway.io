@@ -1,0 +1,113 @@
+explanation:
+  heading: What Is Binance Smart Chain
+  text: Binance Smart Chain (BSC) is a high-performance blockchain that runs in parallel with the Binance Chain. It is compatible with the Ethereum Virtual Machine (EVM) and supports smart contract development. BSC uses Proof of Staked Authority (PoSA) consensus mechanism that combines Proof of Stake (PoS) and Proof of Authority (PoA) to ensure high speed and low transaction fees.
+  image: /assets/images/bsc/what_is_bsc.png
+  alt: "Illustration of BSC logo"
+
+advantages:
+  heading: Advantages of Binance Smart Chain
+  cards:
+    - image: /assets/images/tron/svg/web3-img.svg 
+      heading: Smart Contracts
+      text: |
+        Binance Smart Chain supports Solidity smart contracts, enabling developers to build decentralized applications on a secure and efficient network.
+      alt: "Illustration of a globe icon"
+    - image: /assets/images/tron/svg/clock.svg
+      heading: Fast Transactions
+      text: |
+        Transactions on Binance Smart Chain are fast and cheap, with an average block time of 3 seconds and transaction fees that are typically less than $0.01.
+      alt: "Illustration of a transactions icon"
+    - image: /assets/images/tron/svg/best.svg
+      heading: High Scalability
+      text: |
+        Binance Smart Chain can handle up to 100 transactions per second, with the potential to scale even further in the future.
+      alt: "Illustration of a limited supply icon"
+market:
+  heading: Binance Smart Chain Market Performance
+  image: /assets/images/bsc/performance.png
+  id: binance-coin
+  alt: "Graph of binance market performance over time"
+
+slider:
+  - heading: Binance Smart Chain Ecosystem
+    image: /assets/images/tron/svg/wallet.svg
+    title: BSC Wallets
+    text: |
+      Binance Smart Chain wallets allow you to send and receive BNB and BEP-20 tokens on the BSC network.
+      Our BSC API allows you to create and manage BSC addresses automatically.
+    alt: USDT Token
+  - heading: Binance Smart Chain Ecosystem
+    image: /assets/images/tron/png/tether-crypto.png
+    title: BSC Wallets
+    text: |
+      The BEP-20 Token of Tether USD (USDT) is the most used stable token on the Binance Smart Chain Blockchain. As the
+      price is linked to the US Dollar, there is no volatility.
+      With our Binance Smart Chain API you can send USDT, receive it and get information and webhooks on Tether USD
+      transactions.
+    alt: USDT Token
+  - heading: Perfect for Payments
+    image: /assets/images/tron/png/mobile-img.png
+    title: Perfect for Payments
+    text: |
+      Binance Smart Chain has a very fast block time of only 3 seconds. This makes it perfect to use for payments.
+      Use our BSC API to integrate Tron in your POS system or e-commerce shop.
+    alt: Perfect for Payments
+
+docs:
+  headline: Polygon API Documentation
+  text: We provide comprehensive API documentation, including request and response examples. Take a look at our available Polygon API functions and endpoints.
+  link: https://docs.chaingateway.io/#tag/Polygon
+  link_text: Explore the Documentation
+  cards:
+    - heading: Wallet API
+      image: /assets/images/tron/svg/wallet-2.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-addresses-Requests
+      alt: "Illustration of a wallet icon"
+    - heading: Webhook API
+      image: /assets/images/tron/svg/notifications.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-WebhooksIPN-Requests
+      alt: "Illustration of a notification icon"
+    - heading: Transaction API
+      image: /assets/images/tron/svg/transactions.svg
+      link: https://docs.chaingateway.io/#tag/Polygon-greater-Transaction-Requests
+      alt: "Illustration of a transaction icon"
+features:
+  heading: Polygon API Features
+  text: Our Polygon API is always up to date and follows the latest security practices. It is universally usable with any ERC20 token. We charge only for successful requests, and there are no token listing fees. Our support is the fastest on the market and helps with all requests.
+  cards:
+    - heading: Secure
+      image: /assets/images/tron/svg/lock.svg
+      alt: "Illustration of a lock icon"
+    - heading: High Availability
+      image: /assets/images/tron/svg/clock-2.svg
+      alt: "Illustration of a clock icon"
+    - heading: Universal
+      image: /assets/images/tron/svg/globe.svg
+      alt: "Illustration of a globe icon"
+get_started:
+  heading: Get started with Chaingateway
+  cards:
+    - heading: Data Analytics
+      image: /assets/images/tron/svg/performance.svg
+      alt: "Illustration of a performance chart icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 2step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tutorials
+      image: /assets/images/tron/png/get_started_img.png
+      alt: "Illustration of a tutorial icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 1step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Tron ETF
+      image: /assets/images/tron/png/get_started_img.png
+      alt: "Illustration of a Tron ETF icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 3step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.
+    - heading: Ecosystem
+      image: /assets/images/tron/png/get_started_img.png
+      alt: "Illustration of an ecosystem icon"
+      button_text: "Learn more"
+      button_link: https://docs.chaingateway.io/#tag/Tron-greater-addresses-Requests
+      text: Our 4step-by-step tutorials make it easy for anyone to automate blockchain interactions, even without coding experience. With sample code, clear explanations, and security recommendations, you'll be able to confidently integrate blockchain technology into your workflow.

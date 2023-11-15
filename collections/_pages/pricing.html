@@ -1,0 +1,128 @@
+---
+layout: default
+title: Pricing | Blockchain API
+description: See our pricing plans for secure and reliable access to blockchain data and functionality through our API solutions for developers and businesses.
+hero: /heros/none.html
+
+---
+<div class="container-lg mb-5 mt-5">
+    <h1 class="text-center text-white "> Pricing </h1>
+    <h2 class="text-center text-white ">Understand how we charge for API usage</h2>
+
+    <div class="text-center mt-4">
+        <div class="switch-wrapper">
+      
+          <input id="monthly" type="radio" name="switch" checked>
+      
+          <input id="yearly" type="radio" name="switch">
+      
+          <label for="monthly">Monthly</label>
+      
+          <label for="yearly">Yearly</label>
+      
+          <span class="highlighter"></span>
+      
+        </div>
+    </div>
+      
+
+    <div class="pricing d-flex flex-column flex-lg-row gap-md-2 gap-0 justify-content-between mb-3">
+        {% for plan in site.data.pricing.featured%}
+        <div class="card flex-fill card-pricing {% if plan.popular %} popular {% endif %} shadow text-center px-1 mb-4">
+            <span class="h4 w-60 mx-auto px-4 py-1 pt-4 rounded-bottom  fw-bold ff_dosis {% if plan.popular %} text_linear_grandient {% else %} text-white {% endif %} text-white shadow-sm pricing-heading "> {{ plan.name }}</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <h1 class="h1 font-weight-normal text-white text-center mb-0 pricegroup monthly" data-pricing-value="30">
+                    €<span class="price">{{ plan.price_monthly }}</span>
+                    <p class="h6 ml-2 period" style="opacity: 0.6">per month</p>
+                </h1>
+                <h1 class="h1 font-weight-normal text-white text-center mb-0 pricegroup yearly hide" data-pricing-value="30">
+                    <p class="badge rounded-pill bg-danger" style="font-size:14px; background: linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%);" >2 month free</p><br>
+                    €<span class="price">{{ plan.price_yearly }} 
+                        <span style="font-size:16px; text-decoration: line-through !important;"> 
+                            €{{ plan.price_monthly | times: 12 }} 
+                        </span>
+                    </span>
+                    <p class="h6 ml-2 period" style="opacity: 0.6">per year </p>
+                </span>
+                </h1>
+            </div>
+            <div class="card-body pt-0 d-flex flex-column">
+                <ul class="list-group list-group-flush bg-transparent "> 
+                    <li class="d-inline list-group-item bg-transparent text-white py-4">
+                        <span>{{ plan.transactions }} transactions per month</span> 
+                        <button type="button" class="d-inline btn  d-inline-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="Successful transactions to a blockchain like Ethereum or Tron, including Tokens and broadcasting of raw transactions.">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                              </svg>
+                        </button>
+                    </li>
+                    <li class="d-inline list-group-item  bg-transparent text-white py-4">
+                        <span>{{ plan.addresses }} total wallet addresses</span> 
+                        <button type="button" class="d-inline btn d-inline-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="Total created or imported wallet addresses with your account to send cryptocurrencies or tokens from. Addresses can be deleted whenever needed.<br>Tron addresses do <u>not</u> count here.">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                              </svg>
+                        </button>
+                    </li>
+                    <li class="d-inline list-group-item  bg-transparent text-white py-4">
+                        <span>{{ plan.webhooks }} total subscriptions/IPNs</span> 
+                        <button type="button" class="d-inline btn  d-inline-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="Total created IPNs/Subscriptions with your account to watch addresses or tokens. IPNs can be deleted whenever needed.">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                              </svg>
+                        </button>
+                    </li>
+                    <li class="d-inline list-group-item  bg-transparent text-white py-4">
+                        <span>{{ plan.requests }} requests per month</span> 
+                        <button type="button" class="d-inline btn  d-inline-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="All successful requests which are <u>not</u> sent transactions, created addresses or created IPNs.<br>Created Tron addresses will count as requests also.">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                              </svg>
+                        </button>
+                    </li>
+                </ul>
+                <a href="{{ plan.url }}" target="_blank" class="mx-6 mt-10 p-3 mt-auto start_btn ff_open rounded-3">Order Now</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+const tableWrapper = document.querySelector(".pricing");
+
+const switchInputs = document.querySelectorAll(".switch-wrapper input");
+
+console.log(switchInputs)
+
+
+const prices = tableWrapper.querySelectorAll(".pricegroup");
+
+const toggleClass = "hide";
+
+for (const switchInput of switchInputs) {
+  switchInput.addEventListener("input", function () {
+    for (const price of prices) {
+      price.classList.add(toggleClass);
+    }
+    const activePrices = tableWrapper.querySelectorAll(
+      `.pricegroup.${switchInput.id}`
+    );
+    console.log(activePrices);
+    for (const activePrice of activePrices) {
+      activePrice.classList.remove(toggleClass);
+    }
+  });
+
+
+}
+
+  //do work
+});
+</script>

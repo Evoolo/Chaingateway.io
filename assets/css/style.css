@@ -1,0 +1,1471 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  background: var(--color-dark-blue) !important;
+}
+
+.header_bg {
+  background-image: url("/assets/images/tron/webp/hero_bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+
+:root {
+  --font-xs: 10px;
+  --font-sm: 12px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --font-xl: 20px;
+  --font-2xl: 24px;
+  --font-28: 28px;
+  --font-3xl: 44px;
+  --font-4xl: 52px;
+  --color-white: #ffffff;
+  --color-offwhite: #fffbff;
+  --color-gold: #d1a103;
+  --color-dark-blue: #000835;
+  --color-black: #000000;
+}
+
+@media (max-width: 1399.98px) {
+  :root {
+    --font-3xl: 40px;
+    --font-4xl: 48px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --font-2xl: 22px;
+    --font-3xl: 38px;
+    --font-4xl: 45px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --font-xl: 16px;
+    --font-2xl: 18px;
+    --font-3xl: 28px;
+    --font-4xl: 35px;
+  }
+}
+
+.ff_dosis {
+  font-family: "Dosis", sans-serif !important;
+}
+
+.ff_open {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.color_dark_blue {
+  color: var(--color-dark-blue) !important;
+}
+
+.color_offwhite {
+  color: var(--color-offwhite) !important;
+}
+
+.color_white {
+  color: var(--color-white) !important;
+}
+
+.color_gold {
+  color: var(--color-gold) !important;
+}
+
+.color_black {
+  color: var(--color-black) !important;
+}
+
+.bg_dark_blue {
+  background-color: var(--color-dark-blue) !important;
+}
+
+.bg_offwhite {
+  background-color: var(--color-offwhite) !important;
+}
+
+.bg_gold {
+  background-color: var(--color-gold) !important;
+}
+
+.bg_black {
+  background-color: var(--color-black) !important;
+}
+
+.font_xs {
+  font-size: var(--font-xs) !important;
+}
+
+.font_sm {
+  font-size: var(--font-sm) !important;
+}
+
+.font_md {
+  font-size: var(--font-md) !important;
+}
+
+.font_lg {
+  font-size: var(--font-lg) !important;
+}
+
+.font_xl {
+  font-size: var(--font-xl) !important;
+}
+
+.font_2xl {
+  font-size: var(--font-2xl) !important;
+}
+
+.font_3xl {
+  font-size: var(--font-3xl) !important;
+}
+
+.font_4xl {
+  font-size: var(--font-4xl) !important;
+}
+
+.fs_15 {
+  font-size: 15px !important;
+}
+
+.fw_md {
+  font-weight: 500 !important;
+}
+
+/* ============================== COMMON DATA =================================== */
+.sub_para {
+  font-size: var(--font-lg);
+  font-weight: 400;
+  color: var(--color-offwhite);
+  opacity: 0.8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sub_heading {
+  font-size: var(--font-3xl);
+  font-weight: 700;
+  background: -o-linear-gradient(348.1deg, #9747ff -1.91%, #0865fb 101.34%);
+  background: linear-gradient(101.9deg, #9747ff -1.91%, #0865fb 101.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --text-fill-color: transparent;
+  font-family: "Dosis", sans-serif !important;
+  position: relative;
+  display: inline-block;
+  padding: 2px 16px 8px;
+}
+
+.sub_heading::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 251, 255, 0.15);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.opacity_07 {
+  opacity: 0.7 !important;
+}
+
+/* ============================== COMMON DATA END =================================== */
+.wating_bg_img {
+  background-image: url("../images/webp/wating-bg.webp") !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+}
+
+.z-index-0 {
+  z-index: 0 !important;
+}
+
+.z-index-5 {
+  z-index: 5 !important;
+}
+
+.z-index-50 {
+  z-index: 50 !important;
+}
+
+.z_100 {
+  z-index: 100 !important;
+}
+
+.index_1 {
+  z-index: 1;
+  position: relative;
+}
+
+.index_-1 {
+  z-index: -1;
+  position: relative;
+}
+
+.index_10 {
+  z-index: 10;
+  position: relative;
+}
+
+/* ====================== PRELOADER CSS START ====================== */
+.no-scroll-x {
+  overflow-y: unset !important;
+  height: unset !important;
+}
+
+.overflow-no-yy {
+  overflow-y: hidden !important;
+}
+
+#loading {
+  z-index: 999;
+  position: fixed;
+  background: -o-linear-gradient(208.43deg,
+      #500050 15.7%,
+      #008080 75.43%) !important;
+  background: linear-gradient(241.57deg,
+      #500050 23.7%,
+      #008080 75.43%) !important;
+  width: 100%;
+}
+
+.proloader_img {
+  -webkit-animation: loader 2s infinite alternate;
+  animation: loader 2s infinite alternate;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+/* =============================DEFINE HERO CSS START============================= */
+
+.hero_section_bg_color {
+  position: relative;
+}
+
+.hero_section_bg_color::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: -o-linear-gradient(233.43deg,
+      rgb(80, 0, 80) 21.7%,
+      rgb(0, 6, 39) 61.43%);
+  background: linear-gradient(216.57deg,
+      rgb(80, 0, 80) 21.7%,
+      rgb(0, 6, 39) 61.43%);
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
+.video-arrow {
+  position: absolute;
+  right: 0px !important;
+}
+
+.hero_bg_color {
+  background: -o-linear-gradient(359.87deg, #000835 -9.62%, #500050 200%);
+  background: linear-gradient(90.13deg, #000835 -9.62%, #500050 200%);
+}
+
+.btn-close:focus {
+  box-shadow: none;
+  outline: none !important;
+}
+
+.btn-close {
+  opacity: 1 !important;
+  height: 50px !important;
+  width: 50px !important;
+  z-index: 50 !important;
+}
+
+.modal {
+  padding-right: 0px !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  background: none !important;
+}
+
+.modal-content {
+  border: none !important;
+}
+
+.modal-body {
+  padding: 0px !important;
+  background: transparent !important;
+}
+
+.tp-widget-wrapper {
+  text-align: left !important;
+}
+
+.text {
+  text-align: left !important;
+}
+
+/* =============================DEFINE HERO CSS END============================= */
+
+/* =============================DEFINE BLOCK CHAIN CSS============================= */
+.blockchain_text {
+  position: relative !important;
+}
+
+.blockchain_text::after {
+  top: 48% !important;
+  padding-left: 24px !important;
+  left: 420px !important;
+  position: absolute;
+  content: "";
+  border: 2px solid !important;
+  border-image-slice: 1 !important;
+  border-image-source: linear-gradient(102.55deg,
+      #12a09e -1.89%,
+      #a81fe9 130.65%) !important;
+  width: 64px !important;
+  height: 2px !important;
+}
+
+.play_icon {
+  margin-top: -8% !important;
+}
+
+.text_linear_grandient {
+  background: -o-linear-gradient(347.45deg,
+      #12a09e -1.89%,
+      #12a09e 39.07%,
+      #a81fe9 92.22%,
+      #a81fe9 130.65%) !important;
+  background: linear-gradient(102.55deg,
+      #12a09e -1.89%,
+      #12a09e 39.07%,
+      #a81fe9 92.22%,
+      #a81fe9 130.65%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  --text-fill-color: transparent !important;
+}
+
+/* ==================================DEFINE SLICK SLIDER CODE================================== */
+.slider_bg {
+  background: #08134f !important;
+}
+
+.hero_silider {
+  min-height: 92px !important;
+  max-height: 92px !important;
+  max-width: 250px !important;
+}
+
+/* ==============================DEFINE ALL BUTTONS CSS ==============================*/
+.common_btn {
+  border: 1px solid;
+  border-image-slice: 1 !important;
+  border-image-source: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%);
+  background: -o-linear-gradient(347.45deg,
+      rgba(18, 160, 158, 0.15) -1.89%,
+      rgba(168, 31, 233, 0.15) 130.65%) !important;
+  background: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.15) -1.89%,
+      rgba(168, 31, 233, 0.15) 130.65%) !important;
+  color: #fffbff;
+  font-weight: 600;
+  font-size: var(--font-lg);
+  padding: 13px 40px;
+  z-index: 10;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.common_btn:hover {
+  background: -o-linear-gradient(347.92deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  background: linear-gradient(102.08deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  -webkit-backdrop-filter: blur(10.5px) !important;
+  backdrop-filter: blur(10.5px) !important;
+}
+
+.start_btn {
+  padding: 14px 32px;
+  background: -o-linear-gradient(347.92deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  background: linear-gradient(102.08deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  -webkit-backdrop-filter: blur(10.5px) !important;
+  backdrop-filter: blur(10.5px) !important;
+  border: 1px solid transparent;
+}
+
+.start_btn:hover {
+  background: -o-linear-gradient(347.92deg,
+      #a81fe9 -9.95%,
+      #12a09e 123.17%) !important;
+  background: linear-gradient(102.08deg,
+      #a81fe9 -9.95%,
+      #12a09e 123.17%) !important;
+    color:white;
+}
+
+.start_btn2 {
+  padding: 14px 32px;
+  border: 1px solid;
+  border-image-slice: 1 !important;
+  border-image-source: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%);
+  background: -o-linear-gradient(347.92deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  background: linear-gradient(102.08deg,
+      #12a09e -9.95%,
+      #a81fe9 123.17%) !important;
+  border: 1px solid transparent;
+}
+
+.start_btn2:hover {
+  background: -o-linear-gradient(347.92deg,
+      #a81fe9 -9.95%,
+      #12a09e 123.17%) !important;
+  background: linear-gradient(102.08deg,
+      #a81fe9 -9.95%,
+      #12a09e 123.17%) !important;
+}
+
+/* =============================DEFINE KEY FEATURES CSS============================= */
+.Key_features_shade {
+  top: 78%;
+}
+
+.key_features_card {
+  border-image-slice: 1 !important;
+  border: 2px solid !important;
+  border-image-source: linear-gradient(228.66deg,
+      rgba(168, 31, 233, 0.3) 2.71%,
+      rgba(255, 255, 255, 0) 92.11%) !important;
+  background: -o-linear-gradient(347.45deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%) !important;
+  background: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.3) -1.89%,
+      rgba(168, 31, 233, 0.3) 130.65%) !important;
+  height: 203px;
+  width: 180px;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+.key_features_card:hover {
+  -webkit-box-shadow: 0px 13px 29px -12px rgba(47, 135, 165, 0.69);
+  box-shadow: 0px 13px 29px -12px rgba(47, 135, 165, 0.69);
+}
+
+/* =============================DEFINE OUR MISSON CSS============================= */
+.our_misson_img {
+  max-width: 550px;
+}
+
+.our_misson_top {
+  top: -55%;
+}
+
+.our_misson_shade {
+  max-width: 750px !important;
+}
+
+/* =============================DEFINE OUR MISSON END CSS============================= */
+/* =============================DEFINE USE CASESS START CSS============================= */
+.use_casese_bg_img {
+  background-image: url("/assets/images/webp/use-cases-bg-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.use_casese_bg_img::after {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/images/webp/use-cases-bg-top-layer.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.use_casese_bg_img::before {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/images/webp/use-cases-bg-bottom-layer.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  bottom: -1%;
+  left: 0;
+}
+
+.use_casese_top_layer_position {
+  top: 5%;
+  right: 0;
+}
+
+.use_casese_bottom_layer_position {
+  bottom: 6%;
+}
+
+.use_case_icons {
+  /* margin: 0 auto !important; */
+  max-width: 45px !important;
+  min-height: 45px !important;
+  max-height: 45px !important;
+}
+
+/* =============================DEFINE USE CASESS END CSS============================= */
+/* =============================DEFINE FEATURES CARD CSS============================= */
+.features_card {
+  width: 318px;
+  height: 100%;
+  border: 1.2px solid transparent;
+  background: -o-linear-gradient(left, #062049, #06234a) padding-box,
+    -o-linear-gradient(top, #84d2fe, #5782c9, #2f4393, #122156) border-box;
+  background: linear-gradient(to right, #062049, #06234a) padding-box,
+    linear-gradient(to bottom, #84d2fe, #5782c9, #2f4393, #122156) border-box;
+  border-radius: 20px;
+  padding: 37px 36px 0px 36px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.features_card:hover {
+  -webkit-box-shadow: 0 0 12px var(--color-offwhite) !important;
+  box-shadow: 0 0 12px var(--color-offwhite) !important;
+}
+
+.features_icons {
+  max-width: 40px !important;
+  max-width: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+}
+
+.features_shade {
+  top: -30%;
+  max-width: 500px !important;
+}
+
+.features_shade_left {
+  top: -19%;
+  left: 0%;
+}
+
+.cryptocurinces_icons {
+  max-width: 74px !important;
+  min-height: 74px !important;
+  max-height: 74px !important;
+}
+
+.mx_width_40 {
+  max-width: 40px !important;
+}
+
+/* =====================DEFINE SUPPORTED CRYPTOCURENCIES START CSS===================== */
+.cryptocurrencies_para_mw {
+  max-width: 370px;
+}
+
+.overflow_slider {
+  width: 55% !important;
+  position: absolute !important;
+  right: 0 !important;
+  -webkit-transform: translateY(-50%) !important;
+  -ms-transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+}
+
+.bg_blurr_crypto_slider_para_btn {
+  color: var(--color-offwhite);
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 600;
+  background: rgba(255, 251, 255, 0.3);
+  border-radius: 4px;
+  padding: 4px 6px;
+  white-space: nowrap !important;
+}
+
+.cryptocurinces_box {
+  padding: 27px 8px !important;
+  background: -o-linear-gradient(top, #064960 0%, #073453 100%);
+  background: linear-gradient(180deg, #064960 0%, #073453 100%);
+  border: 1px solid#84d2fe;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 12px;
+  height: 250px !important;
+  cursor: pointer !important;
+}
+
+.slick-dots li button:before {
+  color: #008080 !important;
+  font-size: 14px !important;
+}
+
+/* ======================DEFINE SUPPORTED CRYPTOCURENCIES END CSS====================== */
+/* =============================DEFINE FUNCTION CHAIN CSS============================= */
+.function_chain_img {
+  max-width: 310px !important;
+  margin: 0 auto !important;
+}
+
+.function_blurr_position {
+  top: -113%;
+}
+
+.function_blurr_position_right {
+  top: -70%;
+}
+
+/* =============================DEFINE DEDICATE BLOCKCHAIN CSS START============================= */
+.check_btn {
+  padding: 16px 32px;
+  background: -o-linear-gradient(347.92deg, #12a09e -9.95%, #a81fe9 123.17%);
+  background: linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%);
+  -webkit-backdrop-filter: blur(10.5px);
+  backdrop-filter: blur(10.5px);
+  border: 1px solid transparent;
+  margin-top: 50px;
+}
+
+.check_btn:hover {
+  background: -o-linear-gradient(347.92deg, #a81fe9 -9.95%, #12a09e 123.17%);
+  background: linear-gradient(102.08deg, #a81fe9 -9.95%, #12a09e 123.17%);
+}
+
+.blurr_img_circel {
+  bottom: -26%;
+  left: -15%;
+}
+
+.blockchain_blurr_left {
+  top: -52%;
+  left: 0;
+}
+
+/* =============================DEFINE STAY UP TO DATE CSS START============================= */
+.bg_stay {
+  background: rgba(0, 128, 128, 0.2);
+}
+
+.stay_up_icons {
+  margin: 0 auto !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  min-height: 46px !important;
+}
+
+.stay_up_box {
+  width: 263px;
+  padding: 47px 16px;
+  background: rgba(66, 232, 224, 0.1);
+  border: 1px solid#84d2fe;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  cursor: pointer !important;
+}
+
+/* =============================DEFINE FOOTER CSS START============================= */
+.footer_bg {
+  background: -o-linear-gradient(350.12deg,
+      rgba(18, 160, 158, 0.1) 11.12%,
+      rgba(168, 31, 233, 0.1) 89.94%);
+  background: linear-gradient(99.88deg,
+      rgba(18, 160, 158, 0.1) 11.12%,
+      rgba(168, 31, 233, 0.1) 89.94%);
+  width: 100%;
+}
+
+.slick-dots {
+  bottom: 0px !important;
+}
+
+.footer_link {
+  position: relative;
+  z-index: 10;
+}
+
+
+.footer_link:hover {
+  color: white !important;
+}
+
+
+.footer_link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer_link:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* =============================DEFINE FAQ CSS START============================= */
+.faqs_left_animation_img {
+  background: linear-gradient(180deg,
+      rgba(0, 8, 53, 0.92) -4.33%,
+      rgba(0, 0, 0, 0) 28.55%),
+    url("../images/webp/faq-left-animatiom.webp");
+  mix-blend-mode: lighten;
+}
+
+.faqs_right_animation_img {
+  bottom: -23%;
+  right: 0;
+  background: linear-gradient(180deg,
+      rgba(0, 8, 53, 0.92) -4.33%,
+      rgba(0, 0, 0, 0) 28.55%),
+    url("../images/webp/faq-right-animatiom.webp");
+  mix-blend-mode: lighten;
+}
+
+.accordion-button {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-radius: 10px !important;
+  padding: 1rem 1.25rem !important;
+  background: -o-linear-gradient(347.45deg,
+      rgba(18, 160, 158, 0.05) -1.89%,
+      rgba(168, 31, 233, 0.05) 130.65%) !important;
+  background: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.05) -1.89%,
+      rgba(168, 31, 233, 0.05) 130.65%) !important;
+}
+
+.button:focus:not(:focus-visible) {
+  background: transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 1rem 1.25rem !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  -webkit-backdrop-filter: blur(0px) !important;
+  backdrop-filter: blur(0px) !important;
+}
+
+.accordion-button::after {
+  background-image: url("../images/svg/faq-arrow.svg") !important;
+  background-position: center !important;
+}
+
+.accordion-item {
+  border-radius: 10px !important;
+  background: -o-linear-gradient(347.45deg,
+      rgba(18, 160, 158, 0.15) -1.89%,
+      rgba(168, 31, 233, 0.15) 130.65%) !important;
+  background: linear-gradient(102.55deg,
+      rgba(18, 160, 158, 0.15) -1.89%,
+      rgba(168, 31, 233, 0.15) 130.65%) !important;
+}
+
+.accordion-body {
+  padding: 0rem 1.25rem !important;
+}
+
+.cursor_pointer {
+  cursor: pointer !important;
+}
+
+/* =============================DEFINE FAQ END CSS============================= */
+/* ============================DEFINE BACK TO TOP START CSS============================ */
+#scroll {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  display: none;
+  border-radius: 50%;
+  background: -o-linear-gradient(233.43deg,
+      rgb(80, 0, 80) 3.7%,
+      rgb(0, 6, 39) 79 0.43%);
+  background: linear-gradient(216.57deg,
+      rgb(80, 0, 80) 3.7%,
+      rgb(0, 6, 39) 79 0.43%);
+  border: 1px solid#84d2fe;
+  -webkit-animation: up-down 2.5s ease-in-out infinite;
+  animation: up-down 2.5s ease-in-out infinite;
+  z-index: 100;
+}
+
+@-webkit-keyframes up-down {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: white;
+}
+
+#scroll:hover {
+  -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.547);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.547);
+}
+
+#scroll:hover::after {
+  height: 100%;
+}
+
+/* ============================DEFINE BACK TO TOP END============================ */
+/* ============================== MEDIA QUERY =================================== */
+@media (min-width: 1300px) and (max-width: 1599.98px) {
+  .container_modified {
+    max-width: 1140px !important;
+    margin: auto;
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+  .stay_up_box {
+    width: 225px !important;
+    padding: 30px 8px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feactures_container {
+    max-width: 1040px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero_section_height {
+    min-height: calc(100vh - 90px) !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .custom_container {
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+  }
+
+  .stay_up_box {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1199.92px) {
+  .hero_silider {
+    min-height: 90px !important;
+    max-height: 149px !important;
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 1023.92px) {
+  .features_card {
+    width: 100% !important;
+    height: 280px !important;
+  }
+}
+
+@media (max-width: 991.92px) {
+  .play_icon {
+    margin-top: 0px !important;
+  }
+
+  .blockchain_text::after {
+    display: none;
+    top: 36% !important;
+    left: 10px !important;
+  }
+
+  .our_misson_img {
+    max-width: 450px !important;
+  }
+
+  .hero_silider {
+    min-height: 90px !important;
+    max-height: 100px !important;
+    max-width: 250px !important;
+  }
+
+  .stay_up_box {
+    width: unset;
+  }
+
+  .faqs_left_animation_img {
+    max-width: 620px;
+  }
+
+  .faqs_right_animation_img {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .features_card {
+    padding: 30px 16px 0px 16px !important;
+    height: 300px;
+  }
+
+  .wating_bg_img {
+    border: 2px solid #5765c0 !important;
+    border-radius: 10px !important;
+  }
+
+  .hero_silider {
+    min-height: 90px !important;
+    max-height: 100px !important;
+    max-width: 210px !important;
+  }
+
+  .check_btn {
+    padding: 14px 24px;
+    margin-top: 22px;
+  }
+
+  .blurr_img_circel {
+    bottom: -26%;
+    left: -10%;
+    max-width: 220px;
+  }
+
+  .overflow_slider {
+    width: unset !important;
+    position: unset !important;
+    right: unset !important;
+    -webkit-transform: unset !important;
+    -ms-transform: unset !important;
+    transform: unset !important;
+    top: unset !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .key_features_card {
+    height: 170px !important;
+    width: 140px !important;
+  }
+
+  .blockchain_text::after {
+    top: 36% !important;
+    left: 150px !important;
+  }
+
+  .proloader_img {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+  }
+
+  .hero_silider {
+    min-height: 80px !important;
+    max-height: 80px !important;
+    max-width: 150px !important;
+  }
+
+  .cryptocurinces_box {
+    width: 250px;
+    margin: auto;
+  }
+
+  .faqs_left_animation_img {
+    max-width: 520px;
+  }
+
+  .faqs_right_animation_img {
+    max-width: 500px;
+    bottom: 0;
+  }
+
+  .accordion-button {
+    padding: 16px !important;
+  }
+
+  .common_btn {
+    padding: 10px 24px !important;
+  }
+
+  .fs_22 {
+    font-size: 22px !important;
+  }
+
+  .sub_para {
+    font-size: 14px !important;
+  }
+
+  .Chaingateway-video {
+    border-radius: 5px !important;
+  }
+
+  .modal-content {
+    margin: 0px 16px !important;
+  }
+}
+
+@media (max-width: 360.98px) {
+  .key_features_card {
+    height: 150px !important;
+    width: 130px !important;
+  }
+
+  .accordion-button {
+    padding: 12px !important;
+  }
+
+  .modal-content {
+    margin: 0px 12px !important;
+  }
+}
+
+/* ============================== MEDIA QUERY END =================================== */
+
+.card-pricing.popular {
+
+  border-width: 3px;
+  border-radius: 20px;
+  background-image:  1 !important;
+  background: -o-linear-gradient(left, #062049, #06234a) padding-box,
+    -o-linear-gradient(top, #12a09e, #a81fe9) content-box;
+  background: linear-gradient(to right, #062049, #06234a) padding-box,
+    linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%) content-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+
+.card-pricing {
+  border-width: 3px;
+  border-radius: 20px;
+  z-index: 100 !important;
+  background-image:  1 !important;
+  border: 1.2px solid transparent;
+  background: -o-linear-gradient(left, #062049, #06234a) padding-box,
+    -o-linear-gradient(top, #84d2fe, #5782c9, #2f4393, #122156) content-box;
+  background: linear-gradient(to right, #062049, #06234a) padding-box,
+    linear-gradient(to bottom, #84d2fe, #5782c9, #2f4393, #122156) content-box;
+  border-radius: 20px;
+  padding: 0px 36px 0px 36px;
+  cursor: pointer;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card-pricing .list-unstyled li {
+  z-index: 200;
+  padding: .5rem 0;
+  color: #FFF;
+ 
+}
+
+.card-pricing:hover {
+  -webkit-box-shadow: 0 0 12px var(--color-offwhite) !important;
+  box-shadow: 0 0 12px var(--color-offwhite) !important;
+}
+
+.pricing-header{
+  background: linear-gradient(to right, #062049, #06234a) padding-box, linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%);
+
+}
+
+.switch-wrapper {
+
+  position: relative;
+
+  display: inline-flex;
+
+  padding: 4px;
+
+  
+
+  margin-bottom: 40px;
+
+  border-radius: 30px;
+
+  background: linear-gradient(to right, #062049, #06234a) padding-box, linear-gradient(to bottom, #84d2fe, #5782c9, #2f4393, #122156) content-box;
+
+}
+
+.switch-wrapper [type="radio"] {
+
+  position: absolute;
+
+  left: -9999px;
+
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+
+  color: #fff;
+  
+
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+
+  background: transparent;
+
+}
+
+.switch-wrapper
+
+  [type="radio"]:checked#monthly
+
+  + label[for="yearly"]
+
+  ~ .highlighter {
+
+  transform: none;
+
+}
+
+.switch-wrapper
+
+  [type="radio"]:checked#yearly
+
+  + label[for="monthly"]
+
+  ~ .highlighter {
+
+  transform: translateX(100%);
+
+}
+
+.switch-wrapper label {
+
+  font-size: 16px;
+
+  z-index: 1;
+  text-align: center;
+
+  min-width: 100px;
+
+  line-height: 32px;
+
+  cursor: pointer;
+  color: white;
+
+  border-radius: 30px;
+
+  transition: color 0.25s ease-in-out;
+
+}
+
+.switch-wrapper label:hover {
+
+  background: rgba(255, 251, 255, 0.2);
+
+
+}
+
+.hide{
+  display: none;
+}
+
+.switch-wrapper .highlighter {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+  background: linear-gradient(102.08deg, #12a09e -9.95%, #a81fe9 123.17%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-toggle:hover {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: white;
+  opacity: 0.8;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  color:white;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+
+.highlight pre { background-color: #272822; }
+.highlight .hll { background-color: #272822; }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+.highlight .gh { } /* Generic Heading & Diff Header */
+.highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
+.highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
+.highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+
+.lineno {
+
+
+
+          /* Hacky, but necessary. Without these lines, single-digit line 
+          /* numbers will not line up with double-digit ones. Change width
+          /* to suit your font. */
+          width: 25px;
+          text-align:right;
+
+          /* Add a nice border */
+
+          padding-left: 0.5em;
+          padding-right: 1em;
+          border-right: 1px solid gray;
+
+}
+
+
+
+
+.pagination > li > a
+{
+    background-color: var(--color-dark-blue) !important;
+    color: white;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #84d2fe;
+    background-color: var(--color-dark-blue) !important;
+    border-color: #84d2fe;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: rgba(66, 232, 224, 0.1) !Important;
+    border: solid 1px #5A4181 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: rgba(66, 232, 224, 0.1) !Important;
+    border: solid 1px #5A4181;
+}
+

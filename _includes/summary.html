@@ -1,0 +1,41 @@
+<div class="d-flex align-items-center flex-row md:flex-column w-100 stay_up_box my-4 p-4">
+
+  {% if post.thumbnail %}
+    <div class="w-25" >
+      <a  href="{{ post.url | relative_url }}">
+        <img width="640" height="360" class="img-thumbnail" alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}"/></a>
+    </div>
+  {% endif %}
+
+  <div class="w-75 p-2">
+    <div class="flex items-center">
+      {% if post.authors %}
+        <div class="d-flex flex-row" style="margin-left:5px">
+          {% for author in post.authors %}
+            {% include author.html
+        author=author
+        show_author_name=false
+        %}
+          {% endfor %}
+        </div>
+      {% endif %}
+      <div class="text-sm font-medium text-gray-700">{{ post.date | date_to_long_string }}</div>
+    </div>
+
+    <a href="{{ post.url | relative_url }}" class="hover:text-green-400  link-light">
+      <h2 class="text-2xl font-semibold mb-1">{{ post.title }}</h2>
+    </a>
+
+    <p class="text-base font-light text-gray-600 mb-4">{{ post.description }}</p>
+
+    {% if post.categories %}
+      <div class="mb-2">
+        {% for category in post.categories %}
+          {% include category-badge.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+
+  </div>
+</div>

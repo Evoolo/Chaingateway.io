@@ -1,0 +1,19 @@
+---
+layout: site
+title: "Blog | Stay informed and receive updates"
+heading: "Blog"
+description: "In this blog we discuss new features from chaingateway.io as well as general blockchain topics and news "
+---
+
+{% include heading.html heading=page.heading %}
+
+<main class="py-6">
+
+  {% for post in paginator.posts %}
+  <div class="mb-12">
+    {% include summary.html post=post %}
+  </div>
+  {% endfor %}
+</main>
+
+{% include paginator.html %}
